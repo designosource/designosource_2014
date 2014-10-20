@@ -27,7 +27,23 @@ body { }
 
 .content { }
 
+.section {
+   background-color: #ddd;
+}
 
+.section-intro {
+   background-image: url("../img/intro-bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 700px;
+
+   .tagline {
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      font-size: $font-size-large;
+   }
+}
 
 /* ==========================================================================
    Primary Content
