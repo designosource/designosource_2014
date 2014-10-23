@@ -14,6 +14,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<p><?php the_field('title_intro'); ?></p>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
