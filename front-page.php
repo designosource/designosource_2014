@@ -14,8 +14,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<p><?php the_field('title_intro'); ?></p>
 
+			<!-- 
+				<?php the_field('title_intro'); ?>
+				<?php the_field('title_about'); ?>
+				<?php the_field('title_process'); ?>
+				<?php the_field('title_work'); ?>
+				<?php the_field('title_team'); ?>
+				<?php the_field('title_contact'); ?>
+			-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
