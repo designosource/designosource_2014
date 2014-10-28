@@ -22,7 +22,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'designosource' ); ?></a>
 
 	<header class="banner navbar navbar-default navbar-static-top" role="banner">
 	  <div class="container">
