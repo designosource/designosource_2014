@@ -15,14 +15,45 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<!-- 
-				<?php the_field('title_intro'); ?>
-				<?php the_field('title_about'); ?>
-				<?php the_field('title_process'); ?>
-				<?php the_field('title_work'); ?>
-				<?php the_field('title_team'); ?>
-				<?php the_field('title_contact'); ?>
+			<!-- UNUSED WORDPRESS VARIABLES:
 			-->
+
+			<div class="section" id="intro">
+				<div class="container">
+					<h1><?php the_field('title_intro'); ?></h1>
+					<p><?php the_field('tagline'); ?></p>
+				</div>
+			</div>
+
+			<div class="section" id="about">
+				<div class="container">
+					<h2><?php the_field('title_about'); ?></h2>
+				</div>
+			</div>
+
+			<div class="section" id="process">
+				<div class="container">
+					<h2><?php the_field('title_process'); ?></h2>
+				</div>
+			</div>
+
+			<div class="section" id="work">
+				<div class="container">
+					<h2><?php the_field('title_work'); ?></h2>
+				</div>
+			</div>
+
+			<div class="section" id="team">
+				<div class="container">
+					<h2><?php the_field('title_team'); ?></h2>
+				</div>
+			</div>
+
+			<div class="section" id="contact">
+				<div class="container">
+					<h2><?php the_field('title_contact'); ?></h2>
+				</div>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
