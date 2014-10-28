@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer container" role="contentinfo">
 		<span>Made by the designosource 2014-2015 team</span>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
