@@ -106,6 +106,7 @@ ul#menu-primary-menu li a
 	margin-top: 50px;
 }
 
+
 /*INTRO PAGE*/
 #main #intro
 {
@@ -140,12 +141,14 @@ ul#menu-primary-menu li a
 }
 
 /*ABOUT PAGE*/
-#about .container
+#about .container,
+#process .container
 {
 	margin: 50px auto;
 }
 
-#about .container h2
+#about .container h2,
+#process .container h2
 {
 	margin:0;
 	color: #303030;
@@ -155,7 +158,9 @@ ul#menu-primary-menu li a
 	margin-bottom: 12.5px;
 } 
 
-#about .container p
+#about .container p,
+#process .container p,
+#process #processSteps a
 {
 	color: #303030;
 	font-family: 'Raleway', sans-serif;
@@ -272,6 +277,67 @@ ul#menu-primary-menu li a
 	background-image: url('assets/linkedIn.svg'), none;
 }
 
+/*PROCESS PAGE*/
+#process
+{
+	overflow: hidden;
+}
+#process #processSteps
+{
+	margin-bottom: 15px;
+}
+
+#process .container p
+{
+	display: none;
+	opacity:0;
+	margin-left: 10%;
+	width:auto;
+}
+
+#process .container p.active
+{
+	display: block;
+	opacity:1;
+	margin-left:0%;
+}
+
+#process .container p#uitwerking span
+{
+	display:block;
+	margin-bottom: 10px;
+}
+
+#process .container p#uitwerking span:last-child
+{
+	margin-bottom: 0px;
+}
+
+#process #processSteps a
+{
+	margin-right: 15px;
+	color: #606060;
+	margin-bottom: 2px;
+}
+
+#process #processSteps a.active
+{
+	color: #303030;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
 	/*NAVIGATION*/
@@ -357,17 +423,21 @@ ul#menu-primary-menu li a
 	}
 
 	/*ABOUT PAGE*/
-	#about .container
+	#about .container,
+	#process .container
 	{
 		margin: 75px auto;
 	}
 
-	#about .container h2
+	#about .container h2,
+	#process .container h2
 	{
 		font-size: 42px;
 	} 
 
-	#about .container p
+	#about .container p,
+	#process .container p,
+	#process #processSteps a
 	{
 		font-size: 20px;
 		line-height: 27.5px;
@@ -414,6 +484,7 @@ ul#menu-primary-menu li a
 	{
 		width: 1000px;
 		margin: 0 auto;
+		padding:0;
 	}
 	/*MAIN WRAPPER*/
 	#page #content
@@ -432,17 +503,21 @@ ul#menu-primary-menu li a
 	}
 
 	/*ABOUT PAGE*/
-	#about .container
+	#about .container,
+	#process .container
 	{
 		margin: 100px auto;
 	}
 
-	#about .container h2
+	#about .container h2,
+	#process .container h2
 	{
 		font-size: 45px;
 	} 
 
-	#about .container p
+	#about .container p,
+	#process .container p,
+	#process #processSteps a
 	{
 		font-size: 22.5px;
 		line-height: 30px;
@@ -459,9 +534,16 @@ ul#menu-primary-menu li a
 		font-size: 25px;
 	}
 
-	#hire .container p
+	#hire .container p,
+	#process .container p
 	{
 		font-size: 22.5px;
 		line-height: 30px;
+	}
+
+	/*PROCESS PAGE*/
+	#process #processSteps
+	{
+		margin-bottom: 20px;
 	}
 }
