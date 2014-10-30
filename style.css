@@ -1,13 +1,24 @@
 /*FONT USE*/
 /*font-family: 'Raleway', sans-serif;*/
 
+/*GENERAL*/
+html, body{height:100%; width:100%;}
+
 /*NAVIGATION*/
+header.banner.navbar.navbar-default.navbar-static-top
+{
+	position: fixed;
+	width: 100%;
+	top:0px;
+}
+.navbar
+{
+	margin-bottom: 0px;
+}
 .navbar-default
 {
 	background-color: #fff;
 	border:none;
-
-	/*background-color: red;*/ /*remove WD*/
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus,
@@ -89,3 +100,146 @@ ul#menu-primary-menu li a
 	font-family: 'Raleway', sans-serif;
 }
 
+/*MAIN WRAPPER*/
+#page #content
+{
+	margin-top: 50px;
+}
+
+/*INTRO PAGE*/
+#main #intro
+{
+	width:100%;
+	height: auto;
+	position:relative;
+}
+
+#main #intro:before
+{
+	content: "";
+    display: block;
+    max-width: 100%;
+    background-color: #fff;
+    background-image: url("assets/team_placeholder.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 55.375%;
+}
+
+#main #intro .container h1
+{
+	position:absolute;
+	bottom:15px;
+	font-size: 14px;
+	padding:5px;
+	line-height: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	width:258px;
+	background-color:rgba(48,48,48,0.75);
+}
+
+/*MEDIAQUERIES TABLET*/
+@media all and (min-width: 768px) {
+	/*NAVIGATION*/
+	header.banner.navbar.navbar-default.navbar-static-top
+	{
+		height: 60px;
+	}
+
+	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand
+	{
+		position: static;
+		left: 0;
+		margin-left: 0px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand
+	{
+		margin:0;
+	}
+
+	.navbar-nav
+	{
+		float: right;
+	}
+
+	.navbar-brand
+	{
+		padding:0;
+		line-height:60px;
+		height: 60px;
+	}
+
+	.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after
+	{
+		display: none;
+	}
+
+	ul#menu-primary-menu li a
+	{
+		font-weight: bold;
+		font-size: 16px;
+		height:60px;
+		line-height: 60px;
+		padding:0px;
+	}
+
+	ul#menu-primary-menu li
+	{
+		border: none;
+		padding:0px 5px;
+		margin: 0px 10px;
+	}
+
+	/*also add on current active section*/
+	ul#menu-primary-menu li:hover:before
+	{
+		width: 100%;
+		background-color: #303030;
+		content: "";
+		height: 5px;
+		position: absolute;
+		bottom: 0;
+		left:0;
+	}
+
+	ul#menu-primary-menu li:hover
+	{
+		background-color: #fff;
+	}
+
+	/*MAIN WRAPPER*/
+	#page #content
+	{
+		margin-top: 20px;
+	}
+
+	/*INTRO PAGE*/
+	#main #intro .container h1
+	{
+		font-size: 20px;
+		padding:10px;
+		line-height: 27.5px;
+		width:374px;
+	}
+}
+
+/*MEDIAQUERIES DESKTOP*/
+@media all and (min-width: 1200px) {
+
+	/*MAIN WRAPPER*/
+	#page #content
+	{
+		margin-top: 0px;
+	}
+
+	/*INTRO PAGE*/
+	#main #intro .container h1
+	{
+		bottom:15%;
+		font-size: 30px;
+		padding:15px;
+		line-height: 35px;
+		width:561px;
+	}
+}

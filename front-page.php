@@ -20,8 +20,8 @@ get_header(); ?>
 
 			<div class="section" id="intro">
 				<div class="container">
-					<h1><?php the_field('title_intro'); ?></h1>
-					<p><?php the_field('tagline'); ?></p>
+					<!--<h1><?php the_field('tagline'); ?></h1>-->
+					<h1>Gepassioneerd door het web, vertalen wij als online creatievelingen uw visie naar een uniek digitaal verhaal.</h1>
 				</div>
 			</div>
 
