@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 	<?php wp_head(); ?>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="wp-content/themes/designosource_2014/style.css">
 </head>
 

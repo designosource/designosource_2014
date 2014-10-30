@@ -1,8 +1,13 @@
+/*FONT USE*/
+/*font-family: 'Raleway', sans-serif;*/
+
 /*NAVIGATION*/
 .navbar-default
 {
 	background-color: #fff;
 	border:none;
+
+	/*background-color: red;*/ /*remove WD*/
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus,
@@ -15,7 +20,7 @@
 .navbar-default .navbar-toggle.collapsed
 {
 	border: none;
-	background-color: #000;
+	background-color: #303030;
 	box-shadow: none;
 	border-radius: 0px;
 	height: 36px;
@@ -42,5 +47,45 @@ button, input[type="button"], input[type="reset"], input[type="submit"]
 	margin-top:0px;
 }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand
+{
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+}
 
+.navbar-collapse
+{
+	padding:0;
+}
+
+ul#menu-primary-menu
+{
+	margin:0;
+}
+
+ul#menu-primary-menu li
+{
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #fff;
+	-webkit-transition: background-color 150ms;
+    -moz-transition: background-color 150ms;
+    -o-transition: background-color 150ms;
+    transition: background-color 150ms;
+}
+
+ul#menu-primary-menu li:hover
+{
+	background-color: #fafafa;
+	-webkit-transition: background-color 150ms;
+    -moz-transition: background-color 150ms;
+    -o-transition: background-color 150ms;
+    transition: background-color 150ms;
+}
+
+ul#menu-primary-menu li a
+{
+	color: #303030;
+	font-family: 'Raleway', sans-serif;
+}
 
