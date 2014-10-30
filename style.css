@@ -2,7 +2,7 @@
 /*font-family: 'Raleway', sans-serif;*/
 
 /*GENERAL*/
-html, body{height:100%; width:100%;}
+html, body{width:100%;}
 
 /*NAVIGATION*/
 header.banner.navbar.navbar-default.navbar-static-top
@@ -129,14 +129,147 @@ ul#menu-primary-menu li a
 #main #intro .container h1
 {
 	position:absolute;
-	bottom:15px;
-	font-size: 14px;
+	bottom:10px;
 	padding:5px;
-	line-height: 20px;
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	width:258px;
+	width:329px;
 	background-color:rgba(48,48,48,0.75);
+	font-size: 18px;
+	line-height: 25px;
+}
+
+/*ABOUT PAGE*/
+#about .container
+{
+	margin: 50px auto;
+}
+
+#about .container h2
+{
+	margin:0;
+	color: #303030;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 12.5px;
+} 
+
+#about .container p
+{
+	color: #303030;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+/*HIRE US PAGE*/
+#main #hire
+{
+	width:100%;
+	height: auto;
+	position:relative;
+}
+
+#hire:before
+{
+	content: "";
+    display: block;
+    max-width: 100%;
+    background-color: #fff;
+    background-image: url("assets/team_overlay.png");
+    height: 250px;
+	-webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+    background-position: 50% 50%;
+}
+
+#hire .container 
+{
+	position: absolute;
+	top:50%;
+	margin-top:-71px;
+	width:100%;
+	height:auto;
+}
+
+#hire .container h3,
+#hire .container p
+{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: center;
+} 
+
+#hire .container h3
+{
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+#hire .container p
+{
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#hire .container ul#socialCon
+{
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	width: 160px;
+	margin: 0 auto;
+	height: 40px;
+	margin-top: 20px;
+}
+
+#hire .container ul#socialCon li
+{
+	padding:0;
+	margin:0;
+	width: 40px;
+	background-color: #ff483a;
+	height: 40px;
+	float: left;
+	margin-right: 20px;
+	list-style: none;
+}
+
+#hire .container ul#socialCon li#linkedIn
+{
+	margin-right: 0px;
+}
+
+#hire .container ul#socialCon li a
+{
+	display: block;
+	height:40px;
+	width:40px;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+}
+
+#hire .container ul#socialCon li#twitter a
+{
+	background-image: url("assets/twitter.png");
+	background-image: url('assets/twitter.svg'), none;
+}
+
+#hire .container ul#socialCon li#facebook a
+{
+	background-image: url("assets/facebook.png");
+	background-image: url('assets/facebook.svg'), none;
+}
+
+#hire .container ul#socialCon li#linkedIn a
+{
+	background-image: url("assets/linkedIn.png");
+	background-image: url('assets/linkedIn.svg'), none;
 }
 
 /*MEDIAQUERIES TABLET*/
@@ -222,11 +355,66 @@ ul#menu-primary-menu li a
 		line-height: 27.5px;
 		width:374px;
 	}
+
+	/*ABOUT PAGE*/
+	#about .container
+	{
+		margin: 75px auto;
+	}
+
+	#about .container h2
+	{
+		font-size: 42px;
+	} 
+
+	#about .container p
+	{
+		font-size: 20px;
+		line-height: 27.5px;
+	}
+
+	/*HIRE US PAGE*/
+	#hire .container h3
+	{
+		font-size: 22.5px;
+	}
+
+	#hire .container p
+	{
+		font-size: 20px;
+		line-height: 27.5px;
+	}
+}
+
+/*MEDIAQUERIES FIXES*/
+@media all and (min-width: 470px) {
+
+	#hire .container
+	{
+		margin-top: -58.5px;
+	}
+}
+
+@media all and (min-width: 640px) {
+
+	#hire:before
+	{
+	    height:auto;
+	    max-width: 100%;
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+	    padding-top: 40.375%;
+	}
 }
 
 /*MEDIAQUERIES DESKTOP*/
 @media all and (min-width: 1200px) {
 
+	.container
+	{
+		width: 1000px;
+		margin: 0 auto;
+	}
 	/*MAIN WRAPPER*/
 	#page #content
 	{
@@ -241,5 +429,39 @@ ul#menu-primary-menu li a
 		padding:15px;
 		line-height: 35px;
 		width:561px;
+	}
+
+	/*ABOUT PAGE*/
+	#about .container
+	{
+		margin: 100px auto;
+	}
+
+	#about .container h2
+	{
+		font-size: 45px;
+	} 
+
+	#about .container p
+	{
+		font-size: 22.5px;
+		line-height: 30px;
+	}
+
+	/*HIRE US PAGE*/
+	#hire .container
+	{
+		margin-top: -61px;
+	}
+
+	#hire .container h3
+	{
+		font-size: 25px;
+	}
+
+	#hire .container p
+	{
+		font-size: 22.5px;
+		line-height: 30px;
 	}
 }

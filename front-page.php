@@ -16,7 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<!-- UNUSED WORDPRESS VARIABLES:
-			-->
+		-->
 
 			<div class="section" id="intro">
 				<div class="container">
@@ -27,7 +27,37 @@ get_header(); ?>
 
 			<div class="section" id="about">
 				<div class="container">
-					<h2><?php the_field('title_about'); ?></h2>
+					<!--<h2><?php the_field('title_about'); ?></h2>-->
+					<h2>Lorem ipsum dolar</h2>
+					<p>
+						Designosource werd opgericht in 2011 door enkele 
+						ambitieuze docenten van de opleiding Interactive 
+						Multimedia Design aan de Thomas More Hogeschool van 
+						Mechelen. Deze practice enterprise geeft een team van 
+						14 studenten de kans om mee te gaan in het reilen en 
+						zeilen van een echt multimedia bureau.
+					</p>
+				</div>
+			</div>
+
+			<div class="section" id="hire">
+				<div class="container">
+					<h3>Hire us</h3>
+					<p>Neem vrijblijvend contact op voor meer informatie!</p>
+
+					<ul id="socialCon">
+						<li id="twitter">
+							<a href="">Twitter</a>
+						</li>	
+
+						<li id="facebook">
+							<a href="">Facebook</a>
+						</li>
+
+						<li id="linkedIn">
+							<a href="">LinkedIn</a>
+						</li>	
+					</ul>
 				</div>
 			</div>
 
