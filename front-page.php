@@ -101,7 +101,40 @@ get_header(); ?>
 
 			<div class="section" id="work">
 				<div class="container">
-					<h2><?php the_field('title_work'); ?></h2>
+					<!--<h2><?php the_field('title_work'); ?></h2>-->
+					<ul id="projects">
+						<li>
+							<img src="/project_placeholder.png">
+							<a href="#"></a>
+						</li>
+
+						<li>
+							<img src="/project_placeholder.png">
+							<a href="#"></a>
+						</li>
+
+						<li>
+							<img src="/project_placeholder.png">
+							<a href="#"></a>
+						</li>
+
+						<li>
+							<img src="/project_placeholder.png">
+							<a href="#"></a>
+						</li>
+
+						<li>
+							<img src="/project_placeholder.png">
+							<a href="#"></a>
+						</li>
+
+						<li id="projectProposal">
+							<div class="projectInfo">
+								<h3>Uw project hierbij?</h3>
+								<a href="#">Contacteer ons!</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 

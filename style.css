@@ -3,6 +3,7 @@
 
 /*GENERAL*/
 html, body{width:100%;}
+ul, li{list-style: none; padding:0; margin:0;}
 
 /*NAVIGATION*/
 header.banner.navbar.navbar-default.navbar-static-top
@@ -326,6 +327,85 @@ ul#menu-primary-menu li a
 	font-weight: bold;
 }
 
+/*PROJECT PAGE*/
+#work .container
+{
+	padding:0;
+}
+
+#work .container ul
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#work .container ul li
+{
+	width: 50%;
+	float: left;
+	height: auto;
+	position: relative;
+}
+
+#work .container ul li img
+{
+	width:100%;
+	height:auto;
+	background-color: #f0f0f0; /*remove when publish*/
+}
+
+
+#work .container ul li a
+{
+	width:100%;
+	height:100%;
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#work .container ul li#projectProposal
+{
+	background-color: #303030;
+	height:100%;
+	padding-bottom:50%;
+}
+
+#work .container ul li .projectInfo
+{
+	position: absolute;
+	width:100%;
+	top:50%;
+	margin-top:-28.5px;
+}
+
+#work .container ul li .projectInfo a
+{
+	display: block;
+	position: static;
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	width:auto;
+}
+
+#work .container ul li .projectInfo h3
+{
+	margin:0;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: center;
+	margin-top: 0px;
+	font-size: 20px;
+}
 
 
 
@@ -336,7 +416,38 @@ ul#menu-primary-menu li a
 
 
 
+/*MEDIAQUERIES FIXES*/
+@media all and (min-width: 470px) {
 
+	#hire .container
+	{
+		margin-top: -58.5px;
+	}
+}
+
+@media all and (min-width: 640px) {
+
+	/*HIRE PAGE*/
+	#hire:before
+	{
+	    height:auto;
+	    max-width: 100%;
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+	    padding-top: 40.375%;
+	}
+
+	/*PROJECT PAGE*/
+	#work .container ul li
+	{
+		width: 33.33333333%;
+	}
+
+	#work .container ul li#projectProposal
+	{
+		padding-bottom:33.33333333%;
+	}
+}
 
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
@@ -444,36 +555,39 @@ ul#menu-primary-menu li a
 	}
 
 	/*HIRE US PAGE*/
-	#hire .container h3
+	#hire .container h3,
+	#work .container ul li .projectInfo h3
 	{
 		font-size: 22.5px;
 	}
 
-	#hire .container p
+	#hire .container p,
+	#work .container ul li .projectInfo a
 	{
 		font-size: 20px;
 		line-height: 27.5px;
 	}
-}
 
-/*MEDIAQUERIES FIXES*/
-@media all and (min-width: 470px) {
-
-	#hire .container
+	/*PROJECT PAGE*/
+	#work .container
 	{
-		margin-top: -58.5px;
+		margin:0;
+		width:100%;
 	}
 }
 
-@media all and (min-width: 640px) {
+/*MEDIAQUERIES FIXES*/
+@media all and (min-width: 900px) {
 
-	#hire:before
+	/*PROJECT PAGE*/
+	#work .container ul li
 	{
-	    height:auto;
-	    max-width: 100%;
-	    background-repeat: no-repeat;
-	    background-size: 100%;
-	    padding-top: 40.375%;
+		width: 25%;
+	}
+
+	#work .container ul li#projectProposal
+	{
+		padding-bottom:25%;
 	}
 }
 
@@ -529,13 +643,15 @@ ul#menu-primary-menu li a
 		margin-top: -61px;
 	}
 
-	#hire .container h3
+	#hire .container h3,
+	#work .container ul li .projectInfo h3
 	{
 		font-size: 25px;
 	}
 
 	#hire .container p,
-	#process .container p
+	#process .container p,
+	#work .container ul li .projectInfo a
 	{
 		font-size: 22.5px;
 		line-height: 30px;
@@ -545,5 +661,16 @@ ul#menu-primary-menu li a
 	#process #processSteps
 	{
 		margin-bottom: 20px;
+	}
+
+	/*PROJECT PAGE*/
+	#work .container ul li
+	{
+		width: 20%;
+	}
+
+	#work .container ul li#projectProposal
+	{
+		padding-bottom:20%;
 	}
 }
