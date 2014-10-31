@@ -140,7 +140,160 @@ get_header(); ?>
 
 			<div class="section" id="team">
 				<div class="container">
-					<h2><?php the_field('title_team'); ?></h2>
+
+					<div id="subCon">
+						<h2><?php the_field('title_team'); ?></h2>
+
+						<div id="teamMembers">
+							<a class="active" id="member1" href="#">Member1</a>
+							<a id="member2" href="#">Member2</a>
+							<a id="member3" href="#">Member3</a>
+							<a id="member4" href="#">Member4</a>
+							<a id="member5" href="#">Member5</a>
+							<a id="member6" href="#">Member6</a>
+							<a id="member7" href="#">Member7</a>
+							<a id="member8" href="#">Member8</a>
+							<a id="member9" href="#">Member9</a>
+							<a id="member10" href="#">Member10</a>
+							<a id="member11" href="#">Member11</a>
+							<a id="member12" href="#">Member12</a>
+							<a id="member13" href="#">Member13</a>
+							<a id="member14" href="#">Member14</a>
+							<a id="member15" href="#">Member15</a>
+							<a id="member16" href="#">Member16</a>
+							<a id="member17" href="#">Member17</a>
+						</div>
+					</div>
+
+					<div id="member1" class="individualMember active">
+						<div class="memberImage"></div>
+						<div class="memberProfile">
+							<h3>Member 1</h3>
+
+							<p>
+								<span class="profilePreview">
+									Member 1 is dit en dat en 
+									heeft gestudeerd op de 
+									Thomas More Hogeschool te 
+									Mechelen.
+								</span>
+
+								<span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing 
+									elit. Sed tempus elementum placerat. Pellentesque a 
+									tortor lacinia, vulputate sem eget, lobortis quam. 
+								</span>
+
+								<span>
+									Etiam tellus mauris, mattis eget augue consectetur, 
+									fringilla molestie dui. Quisque eget velit libero. Duis 
+									suscipit lectus in dolor semper vestibulum eu ac elit. 
+								</span>
+							</p>
+
+							<ul id="socialCon">
+								<li id="twitter">
+									<a href="#">Twitter</a>
+								</li>	
+
+								<li id="linkedIn">
+									<a href="#">LinkedIn</a>
+								</li>
+
+								<li id="portfolio">
+									<a href="#">Website</a>
+								</li>	
+							</ul>
+														
+						</div>
+					</div>
+
+					<div id="member2" class="individualMember">
+						<div class="memberImage"></div>
+						<div class="memberProfile">
+							<h3>Jessica Doe</h3>
+
+							<p>
+								<span class="profilePreview">
+									Jessica is dit en dat en 
+									heeft gestudeerd op de 
+									Thomas More Hogeschool te 
+									Mechelen.
+								</span>
+
+								<span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing 
+									elit. Sed tempus elementum placerat. Pellentesque a 
+									tortor lacinia, vulputate sem eget, lobortis quam. 
+								</span>
+
+								<span>
+									Etiam tellus mauris, mattis eget augue consectetur, 
+									fringilla molestie dui. Quisque eget velit libero. Duis 
+									suscipit lectus in dolor semper vestibulum eu ac elit. 
+								</span>
+							</p>
+
+							<ul id="socialCon">
+								<li id="twitter">
+									<a href="#">Twitter</a>
+								</li>	
+
+								<li id="linkedIn">
+									<a href="#">LinkedIn</a>
+								</li>
+
+								<li id="portfolio">
+									<a href="#">Website</a>
+								</li>	
+							</ul>
+														
+						</div>
+					</div>
+
+					<div id="member3" class="individualMember">
+						<div class="memberImage"></div>
+						<div class="memberProfile">
+							<h3>Jessica Doe</h3>
+
+							<p>
+								<span class="profilePreview">
+									Jessica is dit en dat en 
+									heeft gestudeerd op de 
+									Thomas More Hogeschool te 
+									Mechelen.
+								</span>
+
+								<span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing 
+									elit. Sed tempus elementum placerat. Pellentesque a 
+									tortor lacinia, vulputate sem eget, lobortis quam. 
+								</span>
+
+								<span>
+									Etiam tellus mauris, mattis eget augue consectetur, 
+									fringilla molestie dui. Quisque eget velit libero. Duis 
+									suscipit lectus in dolor semper vestibulum eu ac elit. 
+								</span>
+							</p>
+
+							<ul id="socialCon">
+								<li id="twitter">
+									<a href="#">Twitter</a>
+								</li>	
+
+								<li id="linkedIn">
+									<a href="#">LinkedIn</a>
+								</li>
+
+								<li id="portfolio">
+									<a href="#">Website</a>
+								</li>	
+							</ul>
+														
+						</div>
+					</div>
+
 				</div>
 			</div>
 

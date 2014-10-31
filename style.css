@@ -2,7 +2,7 @@
 /*font-family: 'Raleway', sans-serif;*/
 
 /*GENERAL*/
-html, body{width:100%;}
+html, body{width:100%;overflow-x:hidden;}
 ul, li{list-style: none; padding:0; margin:0;}
 
 /*NAVIGATION*/
@@ -143,13 +143,15 @@ ul#menu-primary-menu li a
 
 /*ABOUT PAGE*/
 #about .container,
-#process .container
+#process .container,
+#team .container
 {
-	margin: 50px auto;
+	margin: 75px auto;
 }
 
 #about .container h2,
-#process .container h2
+#process .container h2,
+#team .container h2
 {
 	margin:0;
 	color: #303030;
@@ -161,7 +163,9 @@ ul#menu-primary-menu li a
 
 #about .container p,
 #process .container p,
-#process #processSteps a
+#process #processSteps a,
+#team .container .individualMember .memberProfile h3,
+#team .container .individualMember .memberProfile p
 {
 	color: #303030;
 	font-family: 'Raleway', sans-serif;
@@ -223,7 +227,8 @@ ul#menu-primary-menu li a
 	line-height: 25px;
 }
 
-#hire .container ul#socialCon
+#hire .container ul#socialCon,
+#team .container ul#socialCon
 {
 	list-style-type: none;
     padding: 0px;
@@ -234,7 +239,8 @@ ul#menu-primary-menu li a
 	margin-top: 20px;
 }
 
-#hire .container ul#socialCon li
+#hire .container ul#socialCon li,
+#team .container ul#socialCon li
 {
 	padding:0;
 	margin:0;
@@ -251,7 +257,8 @@ ul#menu-primary-menu li a
 	margin-right: 0px;
 }
 
-#hire .container ul#socialCon li a
+#hire .container ul#socialCon li a,
+#team .container ul#socialCon li a
 {
 	display: block;
 	height:40px;
@@ -260,7 +267,8 @@ ul#menu-primary-menu li a
 	background-repeat: no-repeat;
 }
 
-#hire .container ul#socialCon li#twitter a
+#hire .container ul#socialCon li#twitter a,
+#team .container ul#socialCon li#twitter a
 {
 	background-image: url("assets/twitter.png");
 	background-image: url('assets/twitter.svg'), none;
@@ -272,7 +280,8 @@ ul#menu-primary-menu li a
 	background-image: url('assets/facebook.svg'), none;
 }
 
-#hire .container ul#socialCon li#linkedIn a
+#hire .container ul#socialCon li#linkedIn a,
+#team .container ul#socialCon li#linkedIn a
 {
 	background-image: url("assets/linkedIn.png");
 	background-image: url('assets/linkedIn.svg'), none;
@@ -303,32 +312,37 @@ ul#menu-primary-menu li a
 	margin-left:0%;
 }
 
-#process .container p#uitwerking span
+#process .container p#uitwerking span,
+#team .container .individualMember .memberProfile p span
 {
 	display:block;
 	margin-bottom: 10px;
 }
 
-#process .container p#uitwerking span:last-child
+#process .container p#uitwerking span:last-child,
+#team .container .individualMember .memberProfile p span:last-child
 {
 	margin-bottom: 0px;
 }
 
-#process #processSteps a
+#process #processSteps a,
+#team .container #subCon #teamMembers a
 {
 	margin-right: 15px;
 	color: #606060;
 	margin-bottom: 2px;
 }
 
-#process #processSteps a.active
+#process #processSteps a.active,
+#team .container #subCon #teamMembers a.active
 {
 	color: #303030;
 	font-weight: bold;
 }
 
 /*PROJECT PAGE*/
-#work .container
+#work .container,
+#team .container
 {
 	padding:0;
 }
@@ -407,10 +421,103 @@ ul#menu-primary-menu li a
 	font-size: 20px;
 }
 
+/*TEAM MEMBER PAGE*/
+#team .container .individualMember
+{
+	width:100%;
+	margin-top: -7.75%;
+	overflow: hidden;
+}
 
+#team .container .individualMember .memberImage,
+#team .container .individualMember .memberProfile
+{
+	width:45%;
+	float:left;
+}
 
+#team .container .individualMember .memberProfile
+{
+	margin: 0 5%;
+}
 
+#team .container .individualMember .memberImage:before
+{
+	content: "";
+    display: block;
+    max-width: 100%;
+    background-image: url("assets/individual_team_placeholder.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 129%;
+}
 
+#team .container .individualMember .memberProfile h3
+{
+	font-weight: bold;
+}
+
+#team .container .individualMember .memberProfile p span
+{
+	display: none;
+}
+
+#team .container ul#socialCon
+{
+	width: 80px;
+	height:20px;
+	margin:0;
+	margin-top: 20px;
+}
+
+#team .container ul#socialCon li
+{
+	height: 20px;
+	width: 20px;
+	margin-right:10px;
+	background-color: transparent;
+}
+
+#team .container ul#socialCon li a
+{
+	height:20px;
+	width:20px;
+}
+
+#team .container ul#socialCon li#portfolio
+{
+	margin-right:0px;
+}
+
+#team .container ul#socialCon li#twitter a
+{
+	background-image: url("assets/member_twitter.png");
+	background-image: url('assets/member_twitter.svg'), none;
+}
+
+#team .container ul#socialCon li#linkedIn a
+{
+	background-image: url("assets/member_linkedIn.png");
+	background-image: url('assets/member_linkedIn.svg'), none;
+}
+
+#team .container ul#socialCon li#portfolio a
+{
+	background-image: url("assets/member_portfolio.png");
+	background-image: url('assets/member_portfolio.svg'), none;
+}
+
+#team .container #subCon
+{
+	margin-left:50%;
+	float: left;
+}
+
+#team .container #subCon #teamMembers
+{
+	margin-bottom: 15px;
+	display: none;
+}
 
 
 
@@ -446,6 +553,12 @@ ul#menu-primary-menu li a
 	#work .container ul li#projectProposal
 	{
 		padding-bottom:33.33333333%;
+	}
+
+	/*TEAM MEMBER PAGE*/
+	#team .container .individualMember .memberProfile p span.profilePreview
+	{
+		display: block;
 	}
 }
 
@@ -535,20 +648,25 @@ ul#menu-primary-menu li a
 
 	/*ABOUT PAGE*/
 	#about .container,
-	#process .container
+	#process .container,
+	#team .container
 	{
-		margin: 75px auto;
+		margin: 150px auto;
 	}
 
 	#about .container h2,
-	#process .container h2
+	#process .container h2,
+	#team .container h2
 	{
 		font-size: 42px;
 	} 
 
 	#about .container p,
 	#process .container p,
-	#process #processSteps a
+	#process #processSteps a,
+	#team .container .individualMember .memberProfile h3,
+	#team .container .individualMember .memberProfile p,
+	#team .container #subCon #teamMembers a
 	{
 		font-size: 20px;
 		line-height: 27.5px;
@@ -574,6 +692,33 @@ ul#menu-primary-menu li a
 		margin:0;
 		width:100%;
 	}
+
+	/*TEAM MEMBER PAGE*/
+	#team .container
+	{
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+	}
+
+	#team .container ul#socialCon
+	{
+		width: 125px;
+		height:25px;
+	}
+
+	#team .container ul#socialCon li
+	{
+		height: 25px;
+		width: 25px;
+		margin-right:25px;
+	}
+
+	#team .container ul#socialCon li a
+	{
+		height:25px;
+		width:25px;
+	}
 }
 
 /*MEDIAQUERIES FIXES*/
@@ -588,6 +733,99 @@ ul#menu-primary-menu li a
 	#work .container ul li#projectProposal
 	{
 		padding-bottom:25%;
+	}
+}
+
+@media all and (min-width: 990px) {
+
+	/*TEAM MEMBER PAGE*/
+	#team .container
+	{
+		overflow:hidden;
+	}
+
+	#team .container .individualMember
+	{
+		width:100%;
+		margin-top: 0%;
+		overflow: visible;
+	}
+
+	#team .container .individualMember .memberImage
+	{
+		max-width: 37.5%;
+	}
+
+	#team .container .individualMember .memberProfile
+	{
+		width:62.5%;
+		margin-left:0;
+		margin-right:0;
+		padding-left: 25px;
+		padding-right: 15px;
+		margin-top:185px;
+	}
+
+	#team .container #subCon
+	{
+		margin-left:37.5%;
+		padding-left: 25px;
+		padding-right: 15px;
+		float: left;
+		margin-bottom:-120px;
+	}
+
+	#team .container .individualMember .memberProfile p span
+	{
+		display: block;
+	}
+
+	#team .container #subCon #teamMembers
+	{
+		display: block;
+	}
+
+	#team .container .individualMember
+	{
+		/*display: none;*/
+	}
+
+	#team .container .individualMember .memberProfile
+	{
+		display: none;
+		opacity:0;
+
+		position: absolute;
+		left: 37.5%;
+		margin-left:5%;
+	}
+	#team .container .individualMember .memberImage
+	{
+		display: none;
+		opacity:0;
+
+		margin-left:-5%;
+	}
+
+
+
+	#team .container .individualMember.active .memberProfile
+	{
+		display: block;
+		opacity:1;
+		margin-left:0%;
+	}
+
+	#team .container .individualMember.active .memberImage
+	{
+		display: block;
+		opacity:1;
+		margin-left:0%;
+	}
+
+	#team .container .individualMember a.active
+	{
+		display: inline;
 	}
 }
 
@@ -618,20 +856,25 @@ ul#menu-primary-menu li a
 
 	/*ABOUT PAGE*/
 	#about .container,
-	#process .container
+	#process .container,
+	#team .container
 	{
-		margin: 100px auto;
+		margin: 175px auto;
 	}
 
 	#about .container h2,
-	#process .container h2
+	#process .container h2,
+	#team .container h2
 	{
 		font-size: 45px;
 	} 
 
 	#about .container p,
 	#process .container p,
-	#process #processSteps a
+	#process #processSteps a,
+	#team .container .individualMember .memberProfile h3,
+	#team .container .individualMember .memberProfile p,
+	#team .container #subCon #teamMembers a
 	{
 		font-size: 22.5px;
 		line-height: 30px;
@@ -672,5 +915,19 @@ ul#menu-primary-menu li a
 	#work .container ul li#projectProposal
 	{
 		padding-bottom:20%;
+	}
+}
+
+/*MEDIAQUERIES FIXES*/
+@media all and (min-width: 1241px){
+	/*TEAM MEMBER PAGE*/
+	#team .container #subCon
+	{
+		margin-bottom:-100px;
+	}
+
+	#team .container .individualMember .memberProfile
+	{
+		margin-top:185px;
 	}
 }
