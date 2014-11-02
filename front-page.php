@@ -297,6 +297,39 @@ get_header(); ?>
 				</div>
 			</div>
 
+			<div class="section" id="statistics">
+				<div class="container">
+					<h2>Statistieken</h2>
+
+					<ul>
+						<li>
+							<p>Thee</p>
+							<h3>94</h3>
+						</li>
+
+						<li class="even">
+							<p>Koffiekoeken</p>
+							<h3>234</h3>
+						</li>
+
+						<li>
+							<p>Koffie</p>
+							<h3>341</h3>
+						</li>
+
+						<li class="even">
+							<p>Frituur</p>
+							<h3>14</h3>
+						</li>
+
+						<li class="last">
+							<p>Redbull</p>
+							<h3>4</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+
 			<div class="section" id="contact">
 				<div class="container">
 					<h2><?php the_field('title_contact'); ?></h2>
