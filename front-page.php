@@ -333,6 +333,43 @@ get_header(); ?>
 			<div class="section" id="contact">
 				<div class="container">
 					<h2><?php the_field('title_contact'); ?></h2>
+
+					<div id="fContact">
+						<div id="adress">
+							<h3>Designosource</h3>
+							<p>Lange Ridderstraat</p>
+							<p>44 Mechelen</p>
+							<p>2800 Belgium</p>
+							<p>Tel. 0472 34 97 82</p>
+						</div>
+
+						<div id="sponsors">
+							<h3>Sponsors</h3>
+							<a href="#">Eigendomain.nl</a>
+							<a href="#">Thomasmore.be</a>
+						</div>
+					</div>
+
+					<div id="eContact">
+						<form action="#" method="post">
+							<div id="mIdentity">
+								<label for="name">Voor-en achternaam</label>
+								<input type="text" id="name" name="name"></input>
+
+								<label for="email">E-mailadres</label>
+								<input type="text" id="email" name="email"></input>
+							</div>
+
+							<div id="mContent">
+								<label for="message">Bericht</label>
+								<textarea id="message" name="comments"></textarea>
+							</div>
+
+							<div id="mButton">
+								<input type="submit" name="verzenden" value="Verzenden"></input>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 

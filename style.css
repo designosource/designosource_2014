@@ -11,6 +11,7 @@ header.banner.navbar.navbar-default.navbar-static-top
 	position: fixed;
 	width: 100%;
 	top:0px;
+	z-index:11;
 }
 .navbar
 {
@@ -144,7 +145,8 @@ ul#menu-primary-menu li a
 /*ABOUT PAGE*/
 #about .container,
 #process .container,
-#team .container
+#team .container,
+#contact .container
 {
 	margin: 75px auto;
 }
@@ -157,7 +159,8 @@ ul#menu-primary-menu li a
 #about .container h2,
 #process .container h2,
 #team .container h2,
-#statistics .container h2
+#statistics .container h2,
+#contact .container h2
 {
 	margin:0;
 	color: #303030;
@@ -173,7 +176,10 @@ ul#menu-primary-menu li a
 #team .container .individualMember .memberProfile h3,
 #team .container .individualMember .memberProfile p,
 #statistics .container p,
-#statistics .container h3
+#statistics .container h3,
+#contact .container p,
+#contact .container a,
+#contact .container label
 {
 	color: #303030;
 	font-family: 'Raleway', sans-serif;
@@ -533,7 +539,7 @@ ul#menu-primary-menu li a
 	width:100%;
 	background-color: #f7f7f7;
 	margin-top: -7.5%;
-	z-index:1000;
+	z-index:10;
 	position:relative;
 }
 
@@ -574,6 +580,131 @@ ul#menu-primary-menu li a
 	text-align: center;
 }
 
+/*CONTACT PAGE*/
+#contact
+{
+	background-color: #303030;
+	overflow:hidden;
+}
+
+#contact .container h2,
+#contact .container h3,
+#contact .container p,
+#contact .container a,
+#contact .container label,
+#contact .container input
+{
+	color: #fff;
+}
+
+#contact .container input,
+#contact .container #eContact textarea
+{
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#contact .container label
+{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#contact .container h2
+{
+	text-align: center;
+}
+
+#contact .container h3
+{
+	font-weight: bold;
+}
+
+#contact .container #fContact
+{
+	margin:25px auto;
+	overflow:hidden;
+}
+
+#contact .container #fContact p
+{
+	margin-bottom:0px;
+}
+
+#contact .container #fContact a
+{
+	text-decoration: underline;
+	display: block;
+	width:auto;
+}
+
+#contact .container #fContact #adress,
+#contact .container #fContact #sponsors
+{
+	float: left;
+	width: 47.5%;
+	margin-right:2.5%;
+}
+
+#contact .container #fContact #sponsors
+{
+	margin-right:0%;
+	text-align: right;
+}
+
+#contact .container #fContact #sponsors
+{
+	margin-right:0%;
+	text-align: right;
+}
+
+#contact .container #eContact
+{
+	overflow:hidden;
+	margin: 0 auto;
+	margin-top: 35px;
+	width: 80%;
+}
+
+#contact .container #eContact input,
+#contact .container #eContact textarea
+{
+	width:100%;
+	height: 35px;
+	background-color: transparent;
+	box-shadow: none;
+	border: 2px solid #fff;
+}
+
+#contact .container #eContact input
+{
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+#contact .container #eContact input[type="submit"]
+{
+	margin-top: 25px;
+	border: none;
+	background-color: #ff483a;
+	font-size: 18px;
+	line-height: 35px;
+	margin-bottom:0px;
+}
+
+#contact .container #eContact textarea
+{
+	height:120px;
+	color: #fff;
+	font-size: 18px;
+	resize:vertical;
+}
+
+#contact .container #eContact label
+{
+	text-align: center;
+	width:100%;
+}
 
 
 
@@ -732,7 +863,8 @@ ul#menu-primary-menu li a
 	/*ABOUT PAGE*/
 	#about .container,
 	#process .container,
-	#team .container
+	#team .container,
+	#contact .container
 	{
 		margin: 150px auto;
 	}
@@ -745,7 +877,8 @@ ul#menu-primary-menu li a
 	#about .container h2,
 	#process .container h2,
 	#team .container h2,
-	#statistics .container h2
+	#statistics .container h2,
+	#contact .container h2
 	{
 		font-size: 42px;
 	} 
@@ -757,10 +890,18 @@ ul#menu-primary-menu li a
 	#team .container .individualMember .memberProfile p,
 	#team .container #subCon #teamMembers a,
 	#statistics .container p,
-	#statistics .container h3
+	#statistics .container h3,
+	#contact .container p,
+	#contact .container a,
+	#contact .container label
 	{
 		font-size: 20px;
 		line-height: 27.5px;
+	}
+
+	#contact .container #eContact label
+	{
+		font-size: 14px
 	}
 
 	/*HIRE US PAGE*/
@@ -809,6 +950,101 @@ ul#menu-primary-menu li a
 	{
 		height:25px;
 		width:25px;
+	}
+
+	/*CONTACT PAGE*/
+	#contact .container
+	{
+		overflow:hidden;
+	}
+
+	#contact .container h2
+	{
+		text-align: left;
+	}
+
+	#contact .container #eContact input
+	{
+		margin-bottom:25px;
+	}
+
+	#contact .container #eContact input[type="submit"]
+	{
+		margin-bottom:0px;
+	}
+
+	
+	#contact .container #fContact #adress,
+	#contact .container #fContact #sponsors
+	{
+		float: none;
+		width: 100%;
+		margin-right:0%;
+	}
+
+	#contact .container #fContact #sponsors
+	{
+		text-align: left;
+	}
+
+	#contact .container #fContact,
+	#contact .container #eContact
+	{
+		margin-top:5px;
+		float:left;
+		width: 50%;
+		margin-bottom:0;
+	}
+
+	#contact .container #eContact
+	{
+		margin-top: 25px;
+	}
+
+	#contact .container #fContact
+	{
+		width:35%;
+		margin-right: 2.5%;
+	}
+
+	#contact .container #eContact
+	{
+		width: 62.5%;
+	}
+
+	#contact .container #eContact #mIdentity,
+	#contact .container #eContact #mContent,
+	#contact .container #eContact #mButton
+	{
+		float:left;
+		width: 47.5%;
+	}
+
+	#contact .container #eContact #mIdentity
+	{
+		margin-right: 5%;
+	}
+
+	#contact .container #eContact label
+	{
+		text-align: left;
+		width:100%;
+	}
+
+	#contact .container #eContact textarea
+	{
+		height:127px;
+	}
+
+	#contact .container #eContact input[type="submit"]
+	{
+		margin-top: 25px;
+		line-height: 35px;
+	}
+
+	#contact .container #eContact #mButton
+	{
+		float:none;
 	}
 }
 
@@ -948,9 +1184,10 @@ ul#menu-primary-menu li a
 	/*ABOUT PAGE*/
 	#about .container,
 	#process .container,
-	#team .container
+	#team .container,
+	#contact .container
 	{
-		margin: 175px auto;
+		margin: 150px auto;
 	}
 
 	#team .container
@@ -961,7 +1198,8 @@ ul#menu-primary-menu li a
 	#about .container h2,
 	#process .container h2,
 	#team .container h2,
-	#statistics .container h2
+	#statistics .container h2,
+	#contact .container h2
 	{
 		font-size: 45px;
 	} 
@@ -973,10 +1211,18 @@ ul#menu-primary-menu li a
 	#team .container .individualMember .memberProfile p,
 	#team .container #subCon #teamMembers a,
 	#statistics .container p,
-	#statistics .container h3
+	#statistics .container h3,
+	#contact .container p,
+	#contact .container a,
+	#contact .container label
 	{
 		font-size: 22.5px;
 		line-height: 30px;
+	}
+
+	#contact .container #eContact label
+	{
+		font-size: 16px
 	}
 
 	/*HIRE US PAGE*/
