@@ -30,8 +30,8 @@ get_header(); ?>
 
 			<div class="section" id="hire">
 				<div class="container">
-					<h3>Hire us</h3>
-					<p>Neem vrijblijvend contact op voor meer informatie!</p>
+					<h3><?php the_field('title_hire'); ?></h3>
+					<p><?php the_field('text_hire'); ?></p>
 
 					<ul id="socialCon">
 						<li id="twitter">
