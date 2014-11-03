@@ -72,39 +72,38 @@ get_header(); ?>
 			<div class="section" id="work">
 				<div class="container">
 					<!--<h2><?php the_field('title_work'); ?></h2>-->
-					<ul id="projects">
-						<li>
-							<img src="/project_placeholder.png">
-							<a href="#"></a>
-						</li>
 
-						<li>
-							<img src="/project_placeholder.png">
-							<a href="#"></a>
-						</li>
+					<?php
 
-						<li>
-							<img src="/project_placeholder.png">
-							<a href="#"></a>
-						</li>
+					$projects = get_field('projects');
 
-						<li>
-							<img src="/project_placeholder.png">
-							<a href="#"></a>
-						</li>
+					if($projects)
+					{
+						echo '<ul id="projects">';
 
-						<li>
-							<img src="/project_placeholder.png">
-							<a href="#"></a>
-						</li>
+						foreach($projects as $project)
+						{
+							echo '<li>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . '<a href="#"></a></li>';
+						}
 
-						<li id="projectProposal">
+						echo 
+						'<li id="projectProposal">
 							<div class="projectInfo">
 								<h3>Uw project hierbij?</h3>
 								<a href="#">Contacteer ons!</a>
 							</div>
-						</li>
-					</ul>
+						</li>';
+
+						echo '</ul>';
+					}
+
+					/*
+					echo "<pre>";
+					print_r($projects);
+					echo "</pre>";
+					*/
+
+					?>
 				</div>
 			</div>
 
