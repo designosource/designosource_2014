@@ -111,7 +111,7 @@ get_header(); ?>
 			<div class="section" id="team">
 				<div class="container">
 
-				<?php $users = get_users( array('role' => 'author') ); ?> 
+				<?php $users = get_users( array('role' => 'author') ); ?>
 
 					<div id="subCon">
 						<h2><?php the_field('title_team'); ?></h2>
@@ -129,23 +129,24 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div id="member1" class="individualMember active">
-						<div class="memberImage"><?php echo get_avatar( $user->ID, 512 ); ?></div>
-						<div class="memberProfile">
-							<h3>
-								<?php the_author_meta( "first_name", $user->ID ) ?>
-								<?php the_author_meta( "last_name", $user->ID ) ?>
-							</h3>
-
-							<p><?php the_author_meta( "description", $user->ID ) ?></p>
-
-							<ul id="socialCon">
-								<li id="twitter"><a href="#">Twitter</a></li>	
-								<li id="linkedIn"><a href="#">LinkedIn</a></li>
-								<li id="portfolio"><a href="#">Website</a></li>	
-							</ul>
-						</div>
-					</div>
+					<?php
+						foreach ( $users as $user ) {
+							echo '
+							<div class="individualMember">
+								<div class="memberImage">'.get_avatar( $user->ID, 512 ).'</div>
+								<div class="memberProfile">
+									<h3>'.get_the_author_meta('first_name', $user->ID).'</h3>
+									<p>'.get_the_author_meta('description', $user->ID).'</p>
+									<ul id="socialCon">
+										<li id="twitter"><a href="#">Twitter</a></li>	
+										<li id="linkedIn"><a href="#">LinkedIn</a></li>
+										<li id="portfolio"><a href="#">Website</a></li>	
+									</ul>
+								</div>
+							</div>
+							';
+						}
+					?>
 
 				</div>
 			</div>
