@@ -91,7 +91,7 @@ get_header(); ?>
 						'<li id="projectProposal">
 							<div class="projectInfo">
 								<h3>Uw project hierbij?</h3>
-								<a href="#">Contacteer ons!</a>
+								<a href="#contact">Contacteer ons!</a>
 							</div>
 						</li>';
 
@@ -139,9 +139,9 @@ get_header(); ?>
 									<h3>'.get_the_author_meta('first_name', $user->ID).'</h3>
 									<p>'.get_the_author_meta('description', $user->ID).'</p>
 									<ul id="socialCon">
-										<li id="twitter"><a href="#">Twitter</a></li>	
-										<li id="linkedIn"><a href="#">LinkedIn</a></li>
-										<li id="portfolio"><a href="#">Website</a></li>	
+										<li id="twitter"><a href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
+										<li id="linkedIn"><a href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>
+										<li id="portfolio"><a href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>	
 									</ul>
 								</div>
 							</div>
