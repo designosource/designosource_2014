@@ -84,7 +84,7 @@ get_header(); ?>
 						foreach($projects as $project)
 						{
 							echo '<li>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . 
-							'<a href="' . $project->guid . '"></a></li>';
+							'<a href="' . $project->guid . '">Bekijk project</a></li>';
 						}
 
 						echo 
