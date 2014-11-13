@@ -115,17 +115,18 @@ get_header(); ?>
 
 					<div id="subCon">
 						<h2><?php the_field('title_team'); ?></h2>
-
 						<div id="teamMembers">
+							<ul>
 							<?php
 								foreach ( $users as $user ) {
-									echo '<a href="#">';
+									echo '<li><a href="#">';
 									echo the_author_meta( "first_name", $user->ID );
 									echo ' ';
 									echo the_author_meta( "last_name", $user->ID );
-									echo '</a>';
+									echo '</a></li>';
 								}
 							?>
+							</ul>
 						</div>
 					</div>
 
