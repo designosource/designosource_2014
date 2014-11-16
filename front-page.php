@@ -71,7 +71,6 @@ get_header(); ?>
 
 			<div class="section" id="work">
 				<div class="container">
-					<!--<h2><?php the_field('title_work'); ?></h2>-->
 
 					<?php
 
@@ -97,12 +96,6 @@ get_header(); ?>
 
 						echo '</ul>';
 					}
-
-					/*
-					echo "<pre>";
-					print_r($projects);
-					echo "</pre>";
-					*/
 
 					?>
 				</div>
