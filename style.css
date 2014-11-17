@@ -679,7 +679,7 @@ ul#menu-primary-menu li a
 
 #contact .container #eContact input
 {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	font-size: 18px;
 }
 
@@ -707,7 +707,17 @@ ul#menu-primary-menu li a
 	width:100%;
 }
 
+div.wpcf7-validation-errors {
+	background-color: none;
+	border: none;
+	display: block;
+	color: #fff;
+	margin: 0;
+}
 
+.ajax-loader {
+	display: none;
+}
 
 
 /*MEDIAQUERIES FIXES*/
@@ -981,7 +991,7 @@ ul#menu-primary-menu li a
 
 	#contact .container #eContact input
 	{
-		margin-bottom:25px;
+		margin-bottom: 0px;
 	}
 
 	#contact .container #eContact input[type="submit"]
