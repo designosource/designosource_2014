@@ -199,24 +199,7 @@ get_header(); ?>
 					</div>
 
 					<div id="eContact">
-						<form action="#" method="post">
-							<div id="mIdentity">
-								<label for="name">Voor-en achternaam</label>
-								<input type="text" id="name" name="name"></input>
-
-								<label for="email">E-mailadres</label>
-								<input type="text" id="email" name="email"></input>
-							</div>
-
-							<div id="mContent">
-								<label for="message">Bericht</label>
-								<textarea id="message" name="comments"></textarea>
-							</div>
-
-							<div id="mButton">
-								<input type="submit" name="verzenden" value="Verzenden"></input>
-							</div>
-						</form>
+						<?php the_field('contact_form'); ?>
 					</div>
 				</div>
 			</div>
