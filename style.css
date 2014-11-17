@@ -12,6 +12,7 @@ header.banner.navbar.navbar-default.navbar-static-top
 	width: 100%;
 	top:0px;
 	z-index:11;
+	border-bottom: 1px solid #f3f3f3;
 }
 .navbar
 {
@@ -47,7 +48,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"]
 
 .navbar-default .navbar-toggle .icon-bar
 {
-	background-color: #fff;
+	background-color: #f3f3f3;
 	border-radius: 0px;
 	width: 20px;
 	height: 2px;
@@ -719,6 +720,16 @@ ul#menu-primary-menu li a
 }
 
 @media all and (min-width: 640px) {
+	/*NAVIGATION*/
+	ul#menu-primary-menu li
+	{
+		background-color: transparent;
+	}
+
+	ul#menu-primary-menu li:hover
+	{
+		background-color: transparent;
+	}
 
 	/*HIRE PAGE*/
 	#hire:before
@@ -887,7 +898,6 @@ ul#menu-primary-menu li a
 	#process .container p,
 	#process #processSteps a,
 	#team .container .individualMember .memberProfile h3,
-	#team .container .individualMember .memberProfile p,
 	#team .container #subCon #teamMembers a,
 	#statistics .container p,
 	#statistics .container h3,
@@ -896,7 +906,13 @@ ul#menu-primary-menu li a
 	#contact .container label
 	{
 		font-size: 20px;
-		line-height: 27.5px;
+		line-height: 40px;
+	}
+
+	#team .container .individualMember .memberProfile p
+	{
+		font-size: 18px;
+		line-height: 36px;
 	}
 
 	#contact .container #eContact label
@@ -1175,10 +1191,10 @@ ul#menu-primary-menu li a
 	#main #intro .container h1
 	{
 		bottom:15%;
-		font-size: 30px;
-		padding:15px;
-		line-height: 35px;
-		width:561px;
+		font-size: 25px;
+		padding:12.5px;
+		line-height: 30px;
+		width:472px;
 	}
 
 	/*ABOUT PAGE*/
@@ -1208,7 +1224,6 @@ ul#menu-primary-menu li a
 	#process .container p,
 	#process #processSteps a,
 	#team .container .individualMember .memberProfile h3,
-	#team .container .individualMember .memberProfile p,
 	#team .container #subCon #teamMembers a,
 	#statistics .container p,
 	#statistics .container h3,
@@ -1216,8 +1231,14 @@ ul#menu-primary-menu li a
 	#contact .container a,
 	#contact .container label
 	{
-		font-size: 22.5px;
-		line-height: 30px;
+		font-size: 20px;
+		line-height: 40px;
+	}
+
+	#team .container .individualMember .memberProfile p
+	{
+		font-size: 18px;
+		line-height: 36px;
 	}
 
 	#contact .container #eContact label
@@ -1241,8 +1262,8 @@ ul#menu-primary-menu li a
 	#process .container p,
 	#work .container ul li .projectInfo a
 	{
-		font-size: 22.5px;
-		line-height: 30px;
+		font-size: 20px;
+		line-height: 40px;
 	}
 
 	/*PROCESS PAGE*/
