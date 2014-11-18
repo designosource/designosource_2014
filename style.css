@@ -1140,23 +1140,17 @@ div.wpcf7-validation-errors {
 
 	#team .container .individualMember
 	{
-		/*display: none;*/
 	}
 
 	#team .container .individualMember .memberProfile
 	{
-		display: none;
 		opacity:0;
-
 		position: absolute;
 		left: 37.5%;
 		margin-left:5%;
 	}
 	#team .container .individualMember .memberImage
 	{
-		display: none;
-		opacity:0;
-
 		margin-left:-5%;
 	}
 

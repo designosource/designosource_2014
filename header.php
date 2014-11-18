@@ -18,7 +18,7 @@
 
 	<?php wp_head(); ?>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="wp-content/themes/designosource_2014/style.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/designosource_wp/wp-content/themes/designosource_2014/style.css">
 </head>
 
 <body <?php body_class(); ?>>
