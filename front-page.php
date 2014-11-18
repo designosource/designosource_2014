@@ -108,7 +108,7 @@ get_header(); ?>
 				
 					<h2><?php the_field('title_team'); ?></h2>
 
-					<!-- <div id="subCon">
+					<div id="subCon">
 						<div id="teamMembers">
 							<ul>
 							<?php
@@ -122,7 +122,7 @@ get_header(); ?>
 							?>
 							</ul>
 						</div>
-					</div> -->
+					</div>
 
 					<?php
 						foreach ( $users as $user ) {
@@ -168,7 +168,7 @@ get_header(); ?>
 
 						<li class="even">
 							<p>Frituur</p>
-							<h3>14</h3>
+							<h3>140</h3>
 						</li>
 
 						<li class="last">
