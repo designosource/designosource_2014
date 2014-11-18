@@ -105,9 +105,10 @@ get_header(); ?>
 				<div class="container">
 
 				<?php $users = get_users( array('role' => 'author') ); ?>
+				
+					<h2><?php the_field('title_team'); ?></h2>
 
-					<div id="subCon">
-						<h2><?php the_field('title_team'); ?></h2>
+					<!-- <div id="subCon">
 						<div id="teamMembers">
 							<ul>
 							<?php
@@ -121,7 +122,7 @@ get_header(); ?>
 							?>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 
 					<?php
 						foreach ( $users as $user ) {

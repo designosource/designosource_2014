@@ -248,7 +248,6 @@ ul#menu-primary-menu li a
 	list-style-type: none;
     padding: 0px;
     margin: 0px;
-	width: 160px;
 	margin: 0 auto;
 	height: 40px;
 	margin-top: 20px;
@@ -437,101 +436,19 @@ ul#menu-primary-menu li a
 }
 
 /*TEAM MEMBER PAGE*/
-#team .container .individualMember
-{
-	width:100%;
-	margin-top: -7.75%;
+.individualMember {
+	display: block;
 	overflow: hidden;
 }
 
-#team .container .individualMember .memberImage,
-#team .container .individualMember .memberProfile
-{
-	width:45%;
-	float:left;
+.memberImage img {
+	height: auto;
+	max-width: 500px;
+	width: 100%;
 }
 
-#team .container .individualMember .memberProfile
-{
-	margin: 0 5%;
-}
-
-#team .container .individualMember .memberImage:before
-{
-	content: "";
-    display: block;
-    max-width: 100%;
-    background-image: url("assets/individual_team_placeholder.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 129%;
-}
-
-#team .container .individualMember .memberProfile h3
-{
-	font-weight: bold;
-}
-
-#team .container .individualMember .memberProfile p span
-{
-	display: none;
-}
-
-#team .container ul#socialCon
-{
-	width: 80px;
-	height:20px;
-	margin:0;
-	margin-top: 20px;
-}
-
-#team .container ul#socialCon li
-{
-	height: 20px;
-	width: 20px;
-	margin-right:10px;
-	background-color: transparent;
-}
-
-#team .container ul#socialCon li a
-{
-	height:20px;
-	width:20px;
-}
-
-#team .container ul#socialCon li#portfolio
-{
-	margin-right:0px;
-}
-
-#team .container ul#socialCon li#twitter a
-{
-	background-image: url("assets/member_twitter.png");
-	background-image: url('assets/member_twitter.svg'), none;
-}
-
-#team .container ul#socialCon li#linkedIn a
-{
-	background-image: url("assets/member_linkedIn.png");
-	background-image: url('assets/member_linkedIn.svg'), none;
-}
-
-#team .container ul#socialCon li#portfolio a
-{
-	background-image: url("assets/member_portfolio.png");
-	background-image: url('assets/member_portfolio.svg'), none;
-}
-
-#team .container #subCon
-{
-	margin-left:50%;
-	float: left;
-}
-
-#team .container #subCon #teamMembers
-{
-	margin-bottom: 15px;
-	display: none;
+.memberProfile {
+	padding: 0 10px;
 }
 
 /*STATISTICS PAGE*/
@@ -763,10 +680,7 @@ div.wpcf7-validation-errors {
 	}
 
 	/*TEAM MEMBER PAGE*/
-	#team .container .individualMember .memberProfile p span.profilePreview
-	{
-		display: block;
-	}
+	
 
 	/*STATISTICS PAGE*/
 	#statistics .container h2
@@ -952,31 +866,7 @@ div.wpcf7-validation-errors {
 	}
 
 	/*TEAM MEMBER PAGE*/
-	#team .container
-	{
-		width:100%;
-		margin-left:0;
-		margin-right:0;
-	}
-
-	#team .container ul#socialCon
-	{
-		width: 125px;
-		height:25px;
-	}
-
-	#team .container ul#socialCon li
-	{
-		height: 25px;
-		width: 25px;
-		margin-right:25px;
-	}
-
-	#team .container ul#socialCon li a
-	{
-		height:25px;
-		width:25px;
-	}
+	
 
 	/*CONTACT PAGE*/
 	#contact .container
@@ -1092,88 +982,7 @@ div.wpcf7-validation-errors {
 @media all and (min-width: 990px) {
 
 	/*TEAM MEMBER PAGE*/
-	#team .container
-	{
-		overflow:hidden;
-	}
-
-	#team .container .individualMember
-	{
-		width:100%;
-		margin-top: 0%;
-		overflow: visible;
-	}
-
-	#team .container .individualMember .memberImage
-	{
-		max-width: 37.5%;
-	}
-
-	#team .container .individualMember .memberProfile
-	{
-		width:62.5%;
-		margin-left:0;
-		margin-right:0;
-		padding-left: 25px;
-		padding-right: 15px;
-		margin-top:185px;
-	}
-
-	#team .container #subCon
-	{
-		margin-left:37.5%;
-		padding-left: 25px;
-		padding-right: 15px;
-		float: left;
-		margin-bottom:-120px;
-	}
-
-	#team .container .individualMember .memberProfile p span
-	{
-		display: block;
-	}
-
-	#team .container #subCon #teamMembers
-	{
-		display: block;
-	}
-
-	#team .container .individualMember
-	{
-	}
-
-	#team .container .individualMember .memberProfile
-	{
-		opacity:0;
-		position: absolute;
-		left: 37.5%;
-		margin-left:5%;
-	}
-	#team .container .individualMember .memberImage
-	{
-		margin-left:-5%;
-	}
-
-
-
-	#team .container .individualMember.active .memberProfile
-	{
-		display: block;
-		opacity:1;
-		margin-left:0%;
-	}
-
-	#team .container .individualMember.active .memberImage
-	{
-		display: block;
-		opacity:1;
-		margin-left:0%;
-	}
-
-	#team .container .individualMember a.active
-	{
-		display: inline;
-	}
+	
 }
 
 /*MEDIAQUERIES DESKTOP*/
@@ -1291,13 +1100,5 @@ div.wpcf7-validation-errors {
 /*MEDIAQUERIES FIXES*/
 @media all and (min-width: 1241px){
 	/*TEAM MEMBER PAGE*/
-	#team .container #subCon
-	{
-		margin-bottom:-100px;
-	}
-
-	#team .container .individualMember .memberProfile
-	{
-		margin-top:185px;
-	}
+	
 }
