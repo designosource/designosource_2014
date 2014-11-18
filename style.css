@@ -250,7 +250,15 @@ ul#menu-primary-menu li a
     margin: 0px;
 	margin: 0 auto;
 	height: 40px;
+	width: 160px;
 	margin-top: 20px;
+}
+
+#team .container ul#socialCon
+{
+	margin:0;
+	width: 135px;
+	height:25px;
 }
 
 #hire .container ul#socialCon li,
@@ -264,6 +272,17 @@ ul#menu-primary-menu li a
 	float: left;
 	margin-right: 20px;
 	list-style: none;
+}
+
+#team .container ul#socialCon li
+{
+	width: 25px;
+	height:25px;
+}
+
+#team .container ul#socialCon li
+{
+	background-color: transparent;
 }
 
 #hire .container ul#socialCon li#linkedIn
@@ -281,8 +300,13 @@ ul#menu-primary-menu li a
 	background-repeat: no-repeat;
 }
 
-#hire .container ul#socialCon li#twitter a,
-#team .container ul#socialCon li#twitter a
+#team .container ul#socialCon li a
+{
+	width:25px;
+	height:25px;
+}
+
+#hire .container ul#socialCon li#twitter a
 {
 	background-image: url("assets/twitter.png");
 	background-image: url('assets/twitter.svg'), none;
@@ -295,10 +319,27 @@ ul#menu-primary-menu li a
 }
 
 #hire .container ul#socialCon li#linkedIn a,
-#team .container ul#socialCon li#linkedIn a
 {
 	background-image: url("assets/linkedIn.png");
 	background-image: url('assets/linkedIn.svg'), none;
+}
+
+#team .container ul#socialCon li#portfolio a
+{
+	background-image: url("assets/member_portfolio.png");
+	background-image: url('assets/member_portfolio.svg'), none;
+}
+
+#team .container ul#socialCon li#twitter a
+{
+	background-image: url("assets/member_twitter.png");
+	background-image: url('assets/member_twitter.svg'), none;
+}
+
+#team .container ul#socialCon li#linkedIn a
+{
+	background-image: url("assets/member_linkedIn.png");
+	background-image: url('assets/member_linkedIn.svg'), none;
 }
 
 /*PROCESS PAGE*/
