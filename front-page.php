@@ -113,7 +113,9 @@ get_header(); ?>
 							<ul>
 							<?php
 								foreach ( $users as $user ) {
-									echo '<li><a href="#">';
+									echo '<li><a href="#" id="';
+									echo the_author_meta( "first_name", $user->ID );
+									echo '">';
 									echo the_author_meta( "first_name", $user->ID );
 									echo ' ';
 									echo the_author_meta( "last_name", $user->ID );
@@ -124,10 +126,11 @@ get_header(); ?>
 						</div>
 					</div>
 
+					<ul id="teamList">
 					<?php
 						foreach ( $users as $user ) {
 							echo '
-							<div class="individualMember">
+							<li class="individualMember" id="'.get_the_author_meta( "first_name", $user->ID ).'">
 								<div class="memberImage">'.get_avatar( $user->ID, 512 ).'</div>
 								<div class="memberProfile">
 									<h3>'.get_the_author_meta('first_name', $user->ID).'</h3>
@@ -138,10 +141,11 @@ get_header(); ?>
 										<li id="portfolio"><a href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>	
 									</ul>
 								</div>
-							</div>
+							</li>
 							';
 						}
 					?>
+					</ul>
 
 				</div>
 			</div>
