@@ -117,8 +117,6 @@ get_header(); ?>
 									echo the_author_meta( "first_name", $user->ID );
 									echo '">';
 									echo the_author_meta( "first_name", $user->ID );
-									echo ' ';
-									echo the_author_meta( "last_name", $user->ID );
 									echo '</a></li>';
 								}
 							?>
@@ -133,7 +131,7 @@ get_header(); ?>
 							<li class="individualMember" id="'.get_the_author_meta( "first_name", $user->ID ).'">
 								<div class="memberImage">'.get_avatar( $user->ID, 512 ).'</div>
 								<div class="memberProfile">
-									<h3>'.get_the_author_meta('first_name', $user->ID).'</h3>
+									<h3>'.get_the_author_meta('first_name', $user->ID).' '.get_the_author_meta('last_name', $user->ID).'</h3>
 									<p>'.get_the_author_meta('description', $user->ID).'</p>
 									<ul id="socialCon">
 										<li id="twitter"><a href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
