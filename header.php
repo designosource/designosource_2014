@@ -15,10 +15,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
 	<?php wp_head(); ?>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="http://localhost/designosource_wordpress/wp-content/themes/designosource_2014/style.css">
 </head>
 
 <body <?php body_class(); ?>>
