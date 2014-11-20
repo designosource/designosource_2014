@@ -320,8 +320,8 @@ ul#menu-primary-menu li a
 
 #hire .container ul#socialCon li#linkedIn a
 {
-	background-image: url("assets/linkedIn.png");
-	background-image: url('assets/linkedIn.svg'), none;
+	background-image: url("assets/linkedin.png");
+	background-image: url('assets/linkedin.svg'), none;
 }
 
 #team .container ul#socialCon li#portfolio a
