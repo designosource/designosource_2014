@@ -719,6 +719,14 @@ div.wpcf7-validation-errors {
 	display: none;
 }
 
+.modal-open .modal,.btn:focus{
+    outline:none!important
+}
+
+:focus 
+{
+	outline: none;
+}
 
 /*MEDIAQUERIES FIXES*/
 @media all and (min-width: 470px) {
