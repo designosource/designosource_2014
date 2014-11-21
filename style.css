@@ -202,13 +202,15 @@ ul#menu-primary-menu li a
     display: block;
     max-width: 100%;
     background-color: #fff;
-    background-image: url("assets/team_overlay.png");
+    background-image: url("assets/hire.jpg");
     height: 250px;
 	-webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
     background-position: 50% 50%;
+    opacity: 0.75;
+    -webkit-transform: skewY(-2.5deg);
 }
 
 #hire .container 
