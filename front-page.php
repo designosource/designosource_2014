@@ -82,8 +82,8 @@ get_header(); ?>
 
 						foreach($projects as $project)
 						{
-							echo '<li>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . 
-							'<a href="' . get_post_meta($project->ID, '_url', true) . '">Bekijk project</a></li>';
+							echo '<li><div class="img-overlay"></div>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . 
+							'<a class="btn" href="' . get_post_meta($project->ID, '_url', true) . '">Bekijk project</a></li>';
 							/*'<a href="' . $project->guid . '">Bekijk project</a></li>';*/
 						}
 
@@ -91,7 +91,7 @@ get_header(); ?>
 						'<li id="projectProposal">
 							<div class="projectInfo">
 								<h3>Uw project hierbij?</h3>
-								<a href="#contact">Contacteer ons!</a>
+								<a class="btn" href="#contact">Contacteer ons!</a>
 							</div>
 						</li>';
 
