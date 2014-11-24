@@ -1,15 +1,29 @@
 /* SMOOTH SCROLLING */
-  $('a[href*=#]:not([href=#])').click(function () {
-    var target = $(this.hash);
+$('a[href*=#]:not([href=#])').click(function () {
+	var target = $(this.hash);
 
-    $(this).addClass('active');
+	$(this).addClass('active');
 
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top
-    }, 1000);
+	$('html, body').stop().animate({
+	  scrollTop: target.offset().top
+	}, 1000);
 
-    return false;
-  });
+	return false;
+});
+
+/* SET AVTIVE MENU ITEM */
+$(window).scroll(function(){
+    var windscroll = $(window).scrollTop(); 
+    
+    $('#main .navsection').each(function(i) {
+        if ($(this).position().top <= windscroll + 20) {
+            $('.nav li.active').removeClass('active');
+            $('.nav li').eq(i).addClass('active');
+        }
+    });
+    
+	return false;
+});
 
 $("#processSteps a").on("click", function(e)
 {	

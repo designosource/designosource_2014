@@ -15,13 +15,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="section" id="intro">
+			<div class="section navsection" id="intro">
 				<div class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
 			</div>
 
-			<div class="section" id="about">
+			<div class="section navsection" id="about">
 				<div class="container">
 					<h2><?php the_field('title_about'); ?></h2>
 					<p><?php the_field('text_about'); ?></p>
@@ -49,7 +49,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="process">
+			<div class="section navsection" id="process">
 				<div class="container">
 					<h2><?php the_field('title_process'); ?></h2>
 
@@ -69,7 +69,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="work">
+			<div class="section navsection" id="work">
 				<div class="container">
 
 					<?php
@@ -102,7 +102,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="team">
+			<div class="section navsection" id="team">
 				<div class="container">
 
 				<?php $users = get_users( array('role' => 'author') ); ?>
@@ -182,7 +182,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="contact">
+			<div class="section navsection" id="contact">
 				<div class="container">
 					<h2><?php the_field('title_contact'); ?></h2>
 
