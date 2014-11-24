@@ -158,6 +158,12 @@ ul#menu-primary-menu li a
 }
 
 /*ABOUT PAGE*/
+
+#about
+{
+	padding-top: 10px;
+}
+
 #about .container,
 #process .container,
 #team .container,
