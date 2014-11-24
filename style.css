@@ -289,6 +289,20 @@ ul#menu-primary-menu li a
 	margin-top: 20px;
 }
 
+#hire .container ul#socialCon li
+{
+	padding: 2.5px;
+	margin:0;
+	width: 40px;
+	background-color: #ff483a;
+	height: 40px;
+	float: left;
+	margin-right: 20px;
+	list-style: none;	
+}
+
+
+
 #team .container ul#socialCon
 {
 	margin:0;
@@ -296,7 +310,7 @@ ul#menu-primary-menu li a
 	height:25px;
 }
 
-#hire .container ul#socialCon li,
+
 #team .container ul#socialCon li
 {
 	padding:0;
@@ -333,7 +347,7 @@ ul#menu-primary-menu li a
 	width:35px;
 	text-indent: -9999px;
 	background-repeat: no-repeat;
-	padding: 2.5px;
+	
 
 }
 
