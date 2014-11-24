@@ -24,6 +24,19 @@ header.banner.navbar.navbar-default.navbar-static-top
 	border:none;
 }
 
+.navbar-brand {
+	background-image: url("assets/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+	width: 140px;
+}
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand
 {
@@ -575,6 +588,7 @@ ul#menu-primary-menu li a
 .individualMember .memberProfile p
 {
 	display: none;
+	/*white-space: pre-wrap;*/
 }
 /*STATISTICS PAGE*/
 #statistics
