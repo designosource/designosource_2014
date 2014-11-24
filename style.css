@@ -243,7 +243,6 @@ ul#menu-primary-menu li a
        -o-background-size: cover;
           background-size: cover;
     background-position: 50% 50%;
-    opacity: 0.75;
     -webkit-transform: skewY(-2.5deg);
 }
 
@@ -330,10 +329,12 @@ ul#menu-primary-menu li a
 #team .container ul#socialCon li a
 {
 	display: block;
-	height:40px;
-	width:40px;
+	height:35px;
+	width:35px;
 	text-indent: -9999px;
 	background-repeat: no-repeat;
+	padding: 2.5px;
+
 }
 
 #team .container ul#socialCon li a
