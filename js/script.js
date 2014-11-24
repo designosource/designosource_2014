@@ -1,3 +1,16 @@
+/* SMOOTH SCROLLING */
+  $('a[href*=#]:not([href=#])').click(function () {
+    var target = $(this.hash);
+
+    $(this).addClass('active');
+
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1000);
+
+    return false;
+  });
+
 $("#processSteps a").on("click", function(e)
 {	
 	if(!$(this).hasClass("active"))
