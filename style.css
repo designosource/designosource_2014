@@ -136,18 +136,6 @@ video
 	width:100%;
 }
 
-/*#main #intro:before
-{
-	content: "";
-    display: block;
-    max-width: 100%;
-    background-color: #fff;
-    background-image: url("assets/team.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 55.375%;
-}*/
-
 #main #intro .container h1
 {
 	position:absolute;
