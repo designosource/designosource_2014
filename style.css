@@ -126,13 +126,14 @@ ul#menu-primary-menu li a
 /*INTRO PAGE*/
 #main #intro
 {
-	background-color: blue;
 	position: relative;
 }
 
-.video-wrapper {
-	background-color: red;
+#intro .container {
+	padding: 0;
+}
 
+.video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
@@ -140,8 +141,6 @@ ul#menu-primary-menu li a
 
 .video-wrapper video
 {
-	background-color: green;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -151,15 +150,14 @@ ul#menu-primary-menu li a
 
 #main #intro .container h1
 {
-	position:absolute;
-	top:10px;
-	padding:5px;
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	width:329px;
-	background-color:rgba(48,48,48,0.75);
+	width: 100%;
+	background-color:rgba(48,48,48,1);
 	font-size: 18px;
 	line-height: 25px;
+	margin-top: 0;
+	padding: 15px;
 }
 
 /*ABOUT PAGE*/
@@ -946,6 +944,13 @@ div.wpcf7-validation-errors {
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
 	/*NAVIGATION*/
+	#main #intro .container h1 {
+		position: absolute;
+		top: auto;
+		bottom: 10%;
+		opacity: 0.75;
+	}
+
 	header.banner.navbar.navbar-default.navbar-static-top
 	{
 		height: 60px;
@@ -1332,7 +1337,6 @@ div.wpcf7-validation-errors {
 	/*INTRO PAGE*/
 	#main #intro .container h1
 	{
-		bottom:15%;
 		font-size: 25px;
 		padding:12.5px;
 		line-height: 30px;
