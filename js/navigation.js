@@ -32,9 +32,4 @@
 			container.className += ' toggled';
 	};
 
-	listitems = document.getElementsByTagName("li");
-	listitems.onclick = function()
-	{
-		container.className = container.className.replace( 'toggled', '' );
-	};
 } )();
