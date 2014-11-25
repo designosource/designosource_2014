@@ -389,6 +389,23 @@ video
 }
 
 /*PROCESS PAGE*/
+.circle {
+	background: #EAEAEA;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	margin-right: 8px;
+	margin-bottom: 6px;
+
+	color: #ffffff;
+	font-size: 1.5rem;
+	display: inline-block;
+	text-align: center;
+	line-height: 2.5rem;
+	width: 2.5rem;
+	vertical-align: middle;
+}
+
 #process
 {
 	overflow: hidden;
@@ -435,11 +452,19 @@ video
 }
 
 #process #processSteps a.active,
+#process #processSteps a.active .circle,
 #team .container #subCon #teamMembers a.active
 {
 	color: #303030;
 	font-weight: bold;
 }
+
+#process #processSteps a.active .circle 
+{
+	color: #fff;
+	background: #ff483a;
+}
+
 
 /*PROJECT PAGE*/
 #work .container,
@@ -1073,10 +1098,6 @@ div.wpcf7-validation-errors {
 	}
 
 	/*TEAM MEMBER PAGE*/
-	#team .container h2
-	{
-		padding-left: 15px;
-	}
 
 	#subCon
 	{
@@ -1087,6 +1108,11 @@ div.wpcf7-validation-errors {
 	#teamMembers .individualMember
 	{
 		float:left;
+	}
+
+	#team .container h2
+	{
+		padding-left: 15px;
 	}
 
 	#teamMembers ul

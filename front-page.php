@@ -59,12 +59,13 @@ get_header(); ?>
 					<h2><?php the_field('title_process'); ?></h2>
 
 					<div id="processSteps">
-						<a class="active" id="onderzoek" href="#">Onderzoek</a>
-						<a id="offerte" href="#">Offerte</a>
-						<a id="uitwerking" href="#">Uitwerking</a>
-						<a id="oplevering" href="#">Oplevering</a>
-						<a id="naService" href="#">Na-service</a>
+						<a class="active" id="onderzoek" href="#"><span class="circle">1</span>Onderzoek</a>
+						<a id="offerte" href="#"><span class="circle">2</span>Offerte</a>
+						<a id="uitwerking" href="#"><span class="circle">3</span>Uitwerking</a>
+						<a id="oplevering" href="#"><span class="circle">4</span>Oplevering</a>
+						<a id="naService" href="#"><span class="circle">5</span>Na-service</a>
 					</div>
+
 
 					<p class="active" id="onderzoek"><?php the_field('text_process_part1'); ?></p>
 					<p id="offerte"><?php the_field('text_process_part2'); ?></p>
