@@ -460,6 +460,7 @@ ul#menu-primary-menu li a
 	margin-right: 15px;
 	color: #606060;
 	margin-bottom: 2px;
+	display: block;
 }
 
 #process #processSteps a.active,
