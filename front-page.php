@@ -189,10 +189,10 @@ get_header(); ?>
 					<div id="fContact">
 						<div id="adress">
 							<h3>Designosource</h3>
-							<p>Lange Ridderstraat</p>
-							<p>44 Mechelen</p>
-							<p>2800 Belgium</p>
-							<p>Tel. 0472 34 97 82</p>
+							<p>Lange Ridderstraat 44</p>
+							<p>2800 Mechelen</p>
+							<p>Belgium</p>
+							<p>Tel. +32 15 36 92 20</p>
 						</div>
 
 						<div id="sponsors">
