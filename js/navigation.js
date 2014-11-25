@@ -31,4 +31,9 @@
 		else
 			container.className += ' toggled';
 	};
+
+	nav = document.getElementById("menu-primary-menu");
+	nav.childNodes.onclick = function(){
+		container.className = container.className.replace( 'toggled', '' );
+	}
 } )();
