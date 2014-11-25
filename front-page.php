@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<div class="section navsection" id="intro">
 
-			<video autoplay="" poster="team.jpg" id="bgvid">
+			<video autoplay="" poster="assets/team.jpg" id="bgvid">
 				<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
 			</video>
 			
@@ -207,7 +207,7 @@ get_header(); ?>
 							<h3>Designosource</h3>
 							<p>Lange Ridderstraat 44</p>
 							<p>2800 Mechelen</p>
-							<p>Belgium</p>
+							<p>België</p>
 							<p>Tel. +32 15 36 92 20</p>
 						</div>
 
