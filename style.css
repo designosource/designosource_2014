@@ -126,21 +126,32 @@ ul#menu-primary-menu li a
 /*INTRO PAGE*/
 #main #intro
 {
-	width:100%;
-	height: auto;
-	position:relative;
+	background-color: blue;
 }
 
-video
+.video-wrapper {
+	background-color: red;
+
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.video-wrapper video
 {
-	width:100%;
-	margin-top: -50px;
+	background-color: green;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #main #intro .container h1
 {
 	position:absolute;
-	bottom:10px;
+	top:10px;
 	padding:5px;
 	font-family: 'Raleway', sans-serif;
 	color: #fff;

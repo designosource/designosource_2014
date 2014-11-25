@@ -16,11 +16,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="section navsection" id="intro">
-
-			<video autoplay="" poster="assets/team.jpg" id="bgvid">
-				<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
-			</video>
-			
+				<div class="video-wrapper">
+					<video autoplay poster="assets/team.jpg">
+						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
+					</video>
+				</div>
+				
 				<div id="intro_header" class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
