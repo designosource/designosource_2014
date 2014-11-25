@@ -127,6 +127,7 @@ ul#menu-primary-menu li a
 #main #intro
 {
 	background-color: blue;
+	position: relative;
 }
 
 .video-wrapper {
