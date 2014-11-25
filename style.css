@@ -247,6 +247,7 @@ ul#menu-primary-menu li a
           background-size: cover;
     background-position: 50% 50%;
     -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
     -webkit-backface-visibility: hidden;
 }
 
@@ -459,6 +460,7 @@ ul#menu-primary-menu li a
 	margin-right: 15px;
 	color: #606060;
 	margin-bottom: 2px;
+	display: block;
 }
 
 #process #processSteps a.active,
@@ -895,6 +897,15 @@ div.wpcf7-validation-errors {
 	    background-size: 100%;
 	    padding-top: 40.375%;
 	}
+
+	/*PROCESS PAGE*/
+
+	#process #processSteps a,
+	#team .container #subCon #teamMembers a
+	{
+		display: inline-block;
+	}
+
 
 	/*PROJECT PAGE*/
 	#work .container ul li
