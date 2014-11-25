@@ -16,11 +16,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="section navsection" id="intro">
-
-			<video autoplay="" poster="assets/team.jpg" id="bgvid">
-				<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
-			</video>
-			
+				<div class="video-wrapper">
+					<video autoplay poster="assets/team.jpg">
+						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
+					</video>
+				</div>
+				
 				<div id="intro_header" class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
@@ -141,12 +142,12 @@ get_header(); ?>
 									<h3>'.get_the_author_meta('first_name', $user->ID).' '.get_the_author_meta('last_name', $user->ID).'</h3>
 									<p>'.get_the_author_meta('description', $user->ID).'</p>
 									<ul id="socialCon">
-										<li id="twitter"><a href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
-										<li id="linkedIn"><a href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>';
+										<li id="twitter"><a target="_blank" href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
+										<li id="linkedIn"><a target="_blank" href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>';
                                         
                                         if(get_the_author_meta('user_url', $user->ID) != null)
                                         {
-                                            echo '<li id="portfolio"><a href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>';
+                                            echo '<li id="portfolio"><a target="_blank" href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>';
                                         }
                                         else
                                         {
