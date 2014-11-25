@@ -247,10 +247,7 @@ ul#menu-primary-menu li a
           background-size: cover;
     background-position: 50% 50%;
     -webkit-transform: skewY(-2.5deg);
-<<<<<<< HEAD
-=======
     	-moz-transform: skewY(-2.5deg);
->>>>>>> sarah
     -webkit-backface-visibility: hidden;
 }
 
@@ -867,8 +864,6 @@ div.wpcf7-validation-errors {
 	    padding-top: 40.375%;
 	}
 
-<<<<<<< HEAD
-=======
 	/*PROCESS PAGE*/
 	#process #processSteps a,
 	#team .container #subCon #teamMembers a
@@ -876,7 +871,6 @@ div.wpcf7-validation-errors {
 		display: inline-block;
 	}
 
->>>>>>> sarah
 	/*PROJECT PAGE*/
 	#work .container ul li
 	{
