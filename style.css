@@ -126,27 +126,38 @@ ul#menu-primary-menu li a
 /*INTRO PAGE*/
 #main #intro
 {
-	width:100%;
-	height: auto;
-	position:relative;
+	position: relative;
 }
 
-video
+#intro .container {
+	padding: 0;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.video-wrapper video
 {
-	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #main #intro .container h1
 {
-	position:absolute;
-	bottom:10px;
-	padding:5px;
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	width:329px;
-	background-color:rgba(48,48,48,0.75);
+	width: 100%;
+	background-color:rgba(48,48,48,1);
 	font-size: 18px;
 	line-height: 25px;
+	margin-top: 0;
+	padding: 15px;
 }
 
 /*ABOUT PAGE*/
@@ -236,6 +247,7 @@ video
           background-size: cover;
     background-position: 50% 50%;
     -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
     -webkit-backface-visibility: hidden;
 }
 
@@ -448,6 +460,7 @@ video
 	margin-right: 15px;
 	color: #606060;
 	margin-bottom: 2px;
+	display: block;
 }
 
 #process #processSteps a.active,
@@ -885,6 +898,15 @@ div.wpcf7-validation-errors {
 	    padding-top: 40.375%;
 	}
 
+	/*PROCESS PAGE*/
+
+	#process #processSteps a,
+	#team .container #subCon #teamMembers a
+	{
+		display: inline-block;
+	}
+
+
 	/*PROJECT PAGE*/
 	#work .container ul li
 	{
@@ -933,6 +955,13 @@ div.wpcf7-validation-errors {
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
 	/*NAVIGATION*/
+	#main #intro .container h1 {
+		position: absolute;
+		top: auto;
+		bottom: 10%;
+		opacity: 0.75;
+	}
+
 	header.banner.navbar.navbar-default.navbar-static-top
 	{
 		height: 60px;
@@ -1319,7 +1348,6 @@ div.wpcf7-validation-errors {
 	/*INTRO PAGE*/
 	#main #intro .container h1
 	{
-		bottom:15%;
 		font-size: 25px;
 		padding:12.5px;
 		line-height: 30px;
