@@ -131,19 +131,34 @@ ul#menu-primary-menu li a
 	position:relative;
 }
 
-video
+#main #intro:before
 {
-	width:100%;
+	content: "";
+    display: block;
+    max-width: 100%;
+    background-color: #fff;
+    background-image: url("assets/team.jpg");
+    /*team_movie*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 55.375%;
+}
+
+#main #intro #intro_header
+{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #main #intro .container h1
 {
-	position:absolute;
+	/*position:absolute;*/
+	margin-top: 0px;
 	bottom:10px;
 	padding:5px;
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	width:329px;
+	width:100%;
 	background-color:rgba(48,48,48,0.75);
 	font-size: 18px;
 	line-height: 25px;
@@ -940,15 +955,6 @@ div.wpcf7-validation-errors {
 		background-color: #fff;
 	}
 
-	.navbar-default .navbar-nav>.active>a {
-		background-color: #fff;
-		border-bottom: 5px solid #000;
-	}
-
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-		background-color: #fff;
-	}
-
 	/*MAIN WRAPPER*/
 	#page #content
 	{
@@ -958,10 +964,17 @@ div.wpcf7-validation-errors {
 	/*INTRO PAGE*/
 	#main #intro .container h1
 	{
+		position:absolute;
 		font-size: 20px;
 		padding:10px;
 		line-height: 27.5px;
 		width:374px;
+	}
+
+	#main #intro #intro_header
+	{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	/*ABOUT PAGE*/
