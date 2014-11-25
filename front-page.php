@@ -19,6 +19,9 @@ get_header(); ?>
 				<div class="video-wrapper">
 					<video autoplay poster="assets/team.jpg">
 						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
+						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.m4v" type="video/mp4">
+						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.webm" type="video/webm">
+						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.ogg" type="video/ogg">
 					</video>
 				</div>
 				
