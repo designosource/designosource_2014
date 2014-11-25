@@ -650,10 +650,10 @@ ul#menu-primary-menu li a
 
 	#statistics:after
 	{
-			content: '';
+			content: "";
   position: absolute;
-  left: 0;
-  bottom: -33px;
+  left: -10;
+  bottom: -32px;
   width: 100%;
   height: 60px;
   background: #f7f7f7;
@@ -712,10 +712,9 @@ ul#menu-primary-menu li a
 
 #contact:before
 {
-content: '';
-  position: absolute;
-  left: 0;
+content: "";
   top: -33px;
+  position: relative;
   width: 100%;
   height: 60px;
   background: #fff;
@@ -1119,11 +1118,6 @@ div.wpcf7-validation-errors {
 	#teamMembers .individualMember
 	{
 		float:left;
-	}
-
-	#team .container h2
-	{
-		padding-left: 15px;
 	}
 
 	#teamMembers ul
