@@ -32,8 +32,9 @@
 			container.className += ' toggled';
 	};
 
-	nav = document.getElementById("menu-primary-menu");
-	nav.childNodes.onclick = function(){
+	listitems = document.getElementsByTagName("li");
+	listitems.onclick = function()
+	{
 		container.className = container.className.replace( 'toggled', '' );
-	}
+	};
 } )();
