@@ -949,6 +949,15 @@ div.wpcf7-validation-errors {
 		background-color: #fff;
 	}
 
+	.navbar-default .navbar-nav>.active>a {
+		background-color: #fff;
+		border-bottom: 5px solid #000;
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+		background-color: #fff;
+	}
+
 	/*MAIN WRAPPER*/
 	#page #content
 	{
