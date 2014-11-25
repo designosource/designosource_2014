@@ -307,7 +307,10 @@ ul#menu-primary-menu li a
 	list-style: none;	
 }
 
-
+#hire .container ul#socialCon li:hover
+{
+	background-color: #000000;
+}
 
 #team .container ul#socialCon
 {
@@ -387,16 +390,31 @@ ul#menu-primary-menu li a
 	background-image: url('assets/member_portfolio.svg'), none;
 }
 
+#team .container ul#socialCon li#portfolio a:hover
+{
+	background-image: url('assets/member_portfolio_red.svg'), none;
+}
+
 #team .container ul#socialCon li#twitter a
 {
 	background-image: url("assets/member_twitter.png");
 	background-image: url('assets/member_twitter.svg'), none;
 }
 
+#team .container ul#socialCon li#twitter a:hover
+{
+	background-image: url('assets/member_twitter_red.svg'), none;
+}
+
 #team .container ul#socialCon li#linkedIn a
 {
 	background-image: url("assets/member_linkedIn.png");
 	background-image: url('assets/member_linkedIn.svg'), none;
+}
+
+#team .container ul#socialCon li#linkedIn a:hover
+{
+	background-image: url('assets/member_linkedIn_red.svg'), none;
 }
 
 /*PROCESS PAGE*/
