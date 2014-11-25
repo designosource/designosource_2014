@@ -131,17 +131,9 @@ ul#menu-primary-menu li a
 	position:relative;
 }
 
-#main #intro:before
+video
 {
-	content: "";
-    display: block;
-    max-width: 100%;
-    background-color: #fff;
-    background-image: url("assets/team.jpg");
-    /*team_movie*/
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 55.375%;
+	width:100%;
 }
 
 #main #intro .container h1
@@ -945,6 +937,15 @@ div.wpcf7-validation-errors {
 
 	ul#menu-primary-menu li:hover
 	{
+		background-color: #fff;
+	}
+
+	.navbar-default .navbar-nav>.active>a {
+		background-color: #fff;
+		border-bottom: 5px solid #000;
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 		background-color: #fff;
 	}
 

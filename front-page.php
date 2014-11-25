@@ -15,13 +15,18 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="section" id="intro">
+			<div class="section navsection" id="intro">
+
+			<video autoplay="" poster="team.jpg" id="bgvid">
+				<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
+			</video>
+			
 				<div class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
 			</div>
 
-			<div class="section" id="about">
+			<div class="section navsection" id="about">
 				<div class="container">
 					<h2><?php the_field('title_about'); ?></h2>
 					<p><?php the_field('text_about'); ?></p>
@@ -49,7 +54,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="process">
+			<div class="section navsection" id="process">
 				<div class="container">
 					<h2><?php the_field('title_process'); ?></h2>
 
@@ -69,7 +74,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="work">
+			<div class="section navsection" id="work">
 				<div class="container">
 
 					<?php
@@ -102,7 +107,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="team">
+			<div class="section navsection" id="team">
 				<div class="container">
 
 				<?php $users = get_users( array('role' => 'author') ); ?>
@@ -182,17 +187,17 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section" id="contact">
+			<div class="section navsection" id="contact">
 				<div class="container">
 					<h2><?php the_field('title_contact'); ?></h2>
 
 					<div id="fContact">
 						<div id="adress">
 							<h3>Designosource</h3>
-							<p>Lange Ridderstraat</p>
-							<p>44 Mechelen</p>
-							<p>2800 Belgium</p>
-							<p>Tel. 0472 34 97 82</p>
+							<p>Lange Ridderstraat 44</p>
+							<p>2800 Mechelen</p>
+							<p>Belgium</p>
+							<p>Tel. +32 15 36 92 20</p>
 						</div>
 
 						<div id="sponsors">
