@@ -133,13 +133,18 @@ ul#menu-primary-menu li a
 	padding: 0;
 }
 
-.video-wrapper {
+.video-wrapper:after {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
 	background-image: url("assets/team.jpg");
 	width:100%;
 	height:auto;
+	-webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+    background-position: 50% 50%;
 }
 
 .video-wrapper video
