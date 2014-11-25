@@ -133,7 +133,7 @@ ul#menu-primary-menu li a
 	padding: 0;
 }
 
-.video-wrapper:after {
+.video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
