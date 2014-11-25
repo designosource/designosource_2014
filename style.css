@@ -205,6 +205,11 @@ ul#menu-primary-menu li a
 	margin-bottom: 12.5px;
 } 
 
+#team .container h2
+{
+	padding-left: 15px;
+}
+
 #about .container p,
 #process .container p,
 #process #processSteps a,
@@ -591,12 +596,6 @@ ul#menu-primary-menu li a
 {
 	width: 60%;
 	padding: 0 25px;
-}
-
-#team .container h2
-{
-	margin-left:40%;
-	padding-left: 25px;
 }
 
 #team .container .individualMember .memberProfile h3
@@ -1037,12 +1036,12 @@ div.wpcf7-validation-errors {
 	/*TEAM MEMBER PAGE*/
 	#team .container
 	{
+
 	}
 
 	#subCon
 	{
 		display: block;
-		margin-left:40%;
 		overflow:hidden;
 	}
 
@@ -1054,7 +1053,7 @@ div.wpcf7-validation-errors {
 	#teamMembers ul
 	{
 		width: 100%;
-		padding: 5px 25px;
+		padding-bottom: 25px;
 		overflow:hidden;
 	}
 
@@ -1094,10 +1093,6 @@ div.wpcf7-validation-errors {
 		display:block;
 	}
 
-
-
-
-
 	#team .container .individualMember .memberProfile
 	{
 		display: none;
@@ -1105,7 +1100,6 @@ div.wpcf7-validation-errors {
 
 		position: absolute;
 		left: 35%;
-		margin-left:10%;
 	}
 	#team .container .individualMember .memberImage
 	{
@@ -1120,7 +1114,6 @@ div.wpcf7-validation-errors {
 	{
 		display: block;
 		opacity:1;
-		margin-left:5%;
 	}
 
 	#team .container .individualMember.active .memberImage
