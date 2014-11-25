@@ -21,7 +21,7 @@ get_header(); ?>
 				<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
 			</video>
 			
-				<div class="container">
+				<div id="intro_header" class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
 			</div>
