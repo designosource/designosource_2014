@@ -241,6 +241,7 @@ video
           background-size: cover;
     background-position: 50% 50%;
     -webkit-transform: skewY(-2.5deg);
+    -webkit-backface-visibility: hidden;
 }
 
 #hire .container 
@@ -628,6 +629,7 @@ video
   -ms-transform: skewY(-2.5deg);
   -o-transform: skewY(-2.5deg);
   transform: skewY(-2.5deg);
+  -webkit-backface-visibility: hidden;
 	}
 
 #statistics ul
@@ -689,6 +691,7 @@ content: '';
   -ms-transform: skewY(2.5deg);
   -o-transform: skewY(2.5deg);
   transform: skewY(-2.5deg);
+  -webkit-backface-visibility: hidden;
 }
 
 #contact .container h2,
