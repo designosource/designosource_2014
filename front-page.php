@@ -174,27 +174,27 @@ get_header(); ?>
 					<ul>
 						<li>
 							<p>Thee</p>
-							<h3>94</h3>
+							<h3>-</h3>
 						</li>
 
 						<li class="even">
 							<p>Koffiekoeken</p>
-							<h3>234</h3>
+							<h3>20</h3>
 						</li>
 
 						<li>
 							<p>Koffie</p>
-							<h3>341</h3>
+							<h3>-</h3>
 						</li>
 
 						<li class="even">
 							<p>Frituur</p>
-							<h3>140</h3>
+							<h3>-</h3>
 						</li>
 
 						<li class="last">
 							<p>Redbull</p>
-							<h3>4</h3>
+							<h3>-</h3>
 						</li>
 					</ul>
 				</div>
