@@ -3,11 +3,18 @@ $('a[href*=#]:not([href=#])').click(function () {
 	var target = $(this.hash);
 
 	$(this).addClass('active');
+		console.log(target.selector + ' ' + target.offset);
 
+	if(target.selector == "#work" || target.selector == "#team"){
+		$('html, body').stop().animate({
+	  scrollTop: target.offset().top-70
+	}, 1000);
+
+	}else{
 	$('html, body').stop().animate({
 	  scrollTop: target.offset().top
 	}, 1000);
-
+	}
 	return false;
 });
 
