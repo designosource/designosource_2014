@@ -141,12 +141,23 @@ get_header(); ?>
 									<p>'.get_the_author_meta('description', $user->ID).'</p>
 									<ul id="socialCon">
 										<li id="twitter"><a href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
-										<li id="linkedIn"><a href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>
-										<li id="portfolio"><a href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>	
-									</ul>
+										<li id="linkedIn"><a href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>';
+                                        
+                                        if(get_the_author_meta('user_url', $user->ID) != null)
+                                        {
+                                            echo '<li id="portfolio"><a href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>';
+                                        }
+                                        else
+                                        {
+                                            //niets tonen
+                                        }
+                                        
+									echo '</ul>
 								</div>
 							</li>
 							';
+							
+							//echo get_the_author_meta('user_url', $user->ID);
 						}
 					?>
 					</ul>
