@@ -40,15 +40,15 @@ get_header(); ?>
 
 					<ul id="socialCon">
 						<li id="twitter">
-							<a href="https://twitter.com/designosource">Twitter</a>
+							<a target="_blank" href="https://twitter.com/designosource">Twitter</a>
 						</li>	
 
 						<li id="facebook">
-							<a href="https://www.facebook.com/Designosource">Facebook</a>
+							<a target="_blank" href="https://www.facebook.com/Designosource">Facebook</a>
 						</li>
 
 						<li id="linkedIn">
-							<a href="https://www.linkedin.com/company/designosource">LinkedIn</a>
+							<a  target="_blank" href="https://www.linkedin.com/company/designosource">LinkedIn</a>
 						</li>	
 					</ul>
 				</div>
@@ -89,7 +89,7 @@ get_header(); ?>
 						foreach($projects as $project)
 						{
 							echo '<li><div class="img-overlay"></div>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . 
-							'<a class="btn" href="' . get_post_meta($project->ID, '_url', true) . '">Bekijk project</a></li>';
+							'<a target="_blank" class="btn" href="' . get_post_meta($project->ID, '_url', true) . '">Bekijk project</a></li>';
 							/*'<a href="' . $project->guid . '">Bekijk project</a></li>';*/
 						}
 
