@@ -134,6 +134,7 @@ ul#menu-primary-menu li a
 video
 {
 	width:100%;
+	margin-top: -50px;
 }
 
 #main #intro .container h1
