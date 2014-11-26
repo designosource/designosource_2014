@@ -23,7 +23,7 @@ $(window).scroll(function(){
     var windscroll = $(window).scrollTop(); 
     
     $('#main .navsection').each(function(i) {
-        if ($(this).position().top <= windscroll + 20) {
+        if ($(this).position().top <= windscroll) {
             $('.nav li.active').removeClass('active');
             $('.nav li').eq(i).addClass('active');
         }
