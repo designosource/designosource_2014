@@ -1,3 +1,10 @@
+/* VIDEO BACKGROUND IMAGE */
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	var vid = document.getElementsByTagName("video")[0];
+	vid.parentNode.setAttribute("id", "hasBg");
+	vid.parentNode.removeChild(vid);
+}
+
 /* SMOOTH SCROLLING */
 $('a[href*=#]:not([href=#])').click(function () {
 	var target = $(this.hash);

@@ -157,6 +157,10 @@ ul#menu-primary-menu li a
 	display:none;
 }
 
+#hasBg {
+	background-image: url("assets/team.jpg");
+}
+
 #main #intro .container h1
 {
 	font-family: 'Raleway', sans-serif;
