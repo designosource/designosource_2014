@@ -186,17 +186,17 @@ get_header(); ?>
 
 						<li>
 							<p>Koffie</p>
-							<h3>-</h3>
+							<h3>2</h3>
 						</li>
 
 						<li class="even">
 							<p>Frituur</p>
-							<h3>-</h3>
+							<h3>1</h3>
 						</li>
 
 						<li class="last">
-							<p>Redbull</p>
-							<h3>-</h3>
+							<p>Energy drank</p>
+							<h3>1</h3>
 						</li>
 					</ul>
 				</div>
@@ -217,7 +217,7 @@ get_header(); ?>
 
 						<div id="sponsors">
 							<h3>Sponsors</h3>
-							<a href="http://eigendomein.nl/">Eigendomain.nl</a>
+							<a href="http://www.eigen-domein.com/">Eigen-domein.com</a>
 							<a href="http://www.thomasmore.be/">Thomasmore.be</a>
 							<a href="https://www.facebook.com/DiederikCrapsPhotography">Diederik Craps</a>
 						</div>
