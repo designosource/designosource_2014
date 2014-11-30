@@ -1,3 +1,10 @@
+/* CLOSE MOBILE MENU */
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
 /* VIDEO BACKGROUND IMAGE */
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	var vid = document.getElementsByTagName("video")[0];
@@ -147,3 +154,4 @@ $(window).resize(function()
 	}
 	
 });
+
