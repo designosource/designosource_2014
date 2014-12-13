@@ -2,7 +2,11 @@
 /*font-family: 'Raleway', sans-serif;*/
 
 /*GENERAL*/
-html, body{width:100%;overflow-x:hidden;}
+html, body{
+	width:100%;
+	overflow-x:hidden;
+	font-family: 'Raleway', Helvetica, sans-serif;
+}
 ul, li{list-style: none; padding:0; margin:0;}
 
 .section {
@@ -1449,33 +1453,34 @@ div.wpcf7-validation-errors {
 }
 
 /********** BLOG OVERVIEW **********/
-.overview-title,
+.overview-title, 
 .entry-title {
-	font-family: 'Raleway', Helvetica, sans-serif;
 	font-weight: bold;
 }
 
 .overview-title {
-	font-size: 2.4em;
+	font-size: 3em;
 }
 
 .entry-title {
-	font-size: 1.7em;
+	font-size: 2em;
 }
 
 .entry-meta {
-	color: #999;
 	margin: 1em 0;
 }
 
-article a {
-	color: #333;
-	/* #ff483a */
+.entry-meta .updated {
+	display: none;
 }
 
+.entry-content p {
+	font-size: 1.25em;
+	line-height: 1.6em;
+	max-width: 700px;
+}
 
-
-
-
-
-
+.entry-meta,
+.comments-link {
+	font-size: 1.15em;
+}
