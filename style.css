@@ -124,6 +124,7 @@ ul#menu-primary-menu li a
 #page #content
 {
 	margin-top: 50px;
+	overflow: hidden;
 }
 
 
@@ -131,6 +132,7 @@ ul#menu-primary-menu li a
 #main #intro
 {
 	position: relative;
+	padding-top: 0;
 }
 
 #intro .container {
@@ -969,6 +971,10 @@ div.wpcf7-validation-errors {
 
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
+	#page #content {
+		margin-top: 60px;
+	}
+
 	/*NAVIGATION*/
 	#main #intro .container h1 {
 		position: absolute;
@@ -1053,10 +1059,6 @@ div.wpcf7-validation-errors {
 	}
 
 	/*MAIN WRAPPER*/
-	#page #content
-	{
-		margin-top: 20px;
-	}
 
 	/*INTRO PAGE*/
 	#main #intro .container h1
@@ -1343,10 +1345,6 @@ div.wpcf7-validation-errors {
 		padding:0;
 	}
 	/*MAIN WRAPPER*/
-	#page #content
-	{
-		margin-top: 0px;
-	}
 
 	/*INTRO PAGE*/
 	#main #intro .container h1
@@ -1449,3 +1447,35 @@ div.wpcf7-validation-errors {
 	/*TEAM MEMBER PAGE*/
 	
 }
+
+/********** BLOG OVERVIEW **********/
+.overview-title,
+.entry-title {
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.overview-title {
+	font-size: 2.4em;
+}
+
+.entry-title {
+	font-size: 1.7em;
+}
+
+.entry-meta {
+	color: #999;
+	margin: 1em 0;
+}
+
+article a {
+	color: #333;
+	/* #ff483a */
+}
+
+
+
+
+
+
+
