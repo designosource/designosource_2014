@@ -1452,6 +1452,20 @@ div.wpcf7-validation-errors {
 	
 }
 
+/********** SIDEBAR **********/
+.widget-area {
+	background-color: #fff;
+}
+
+.widget-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.widget_search input {
+	border-radius: 0px;
+}
+
 /********** BLOG OVERVIEW **********/
 .overview-title, 
 .entry-title {
@@ -1459,7 +1473,11 @@ div.wpcf7-validation-errors {
 }
 
 .overview-title {
-	font-size: 3em;
+	font-size: 2.8em;
+}
+
+.overview-intro {
+	font-size: 1.3em;
 }
 
 .entry-title {
@@ -1475,12 +1493,12 @@ div.wpcf7-validation-errors {
 }
 
 .entry-content p {
-	font-size: 1.25em;
+	font-size: 1.1em;
 	line-height: 1.6em;
 	max-width: 700px;
 }
 
 .entry-meta,
 .comments-link {
-	font-size: 1.15em;
+	font-size: 1em;
 }
