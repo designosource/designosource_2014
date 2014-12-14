@@ -176,3 +176,17 @@ function save_extra_social_links( $user_id )
     update_user_meta( $user_id,'google_profile', sanitize_text_field( $_POST['google_profile'] ) );
     update_user_meta( $user_id,'linkedin_profile', sanitize_text_field( $_POST['linkedin_profile'] ) );
 }
+
+/* SEARCH */
+function my_search_form( $form ) {
+	$form = '<form role="search" method="get" id="searchform" class="searchform form-inline" action="' . home_url( '/' ) . '" >
+	<div><label class="screen-reader-text sr-only" for="s">' . __( 'Search for:' ) . '</label>
+	<input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" />
+	<input class="btn btn-default" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
+	</div>
+	</form>';
+
+	return $form;
+}
+
+add_filter( 'get_search_form', 'my_search_form' );
