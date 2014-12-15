@@ -1446,15 +1446,19 @@ div.wpcf7-validation-errors {
 	}
 }
 
-/*MEDIAQUERIES FIXES*/
-@media all and (min-width: 1241px){
-	/*TEAM MEMBER PAGE*/
-	
+/******************************/
+/************ BLOG ************/
+/******************************/
+/* Sidebar */
+.col-md-4 {
+	padding-bottom: 3em;
+	padding-top: 1em;
+	height: 100%;
 }
 
-/********** SIDEBAR **********/
 .widget-area {
-	background-color: #fff;
+	border-top: 1px solid #ccc;
+	margin-top: 2em;
 }
 
 .widget-title {
@@ -1462,43 +1466,36 @@ div.wpcf7-validation-errors {
 	font-weight: bold;
 }
 
-.widget_search input {
+.widget-area input,
+.comments-area input,
+.comments-area textarea {
 	border-radius: 0px;
 }
 
-/********** BLOG OVERVIEW **********/
-.overview-title, 
-.entry-title {
-	font-weight: bold;
+.widget-area .btn,
+.comments-area .btn {
+	background-color: #ff483a;
+	border-color: #ff483a;
+	color: #fff;
 }
 
-.overview-title {
-	font-size: 2.8em;
+.widget-area .btn:hover,
+.comments-area .btn:hover {
+	background-color: #ff584b;
+	border-color: #ff584b;
 }
 
-.overview-intro {
-	font-size: 1.3em;
-}
+/* #ff483a #ff584b */
 
-.entry-title {
-	font-size: 2em;
-}
+/* Overview */
+/* Single post */
 
-.entry-meta {
-	margin: 1em 0;
-}
 
-.entry-meta .updated {
-	display: none;
-}
 
-.entry-content p {
-	font-size: 1.1em;
-	line-height: 1.6em;
-	max-width: 700px;
-}
 
-.entry-meta,
-.comments-link {
-	font-size: 1em;
-}
+
+
+
+
+
+

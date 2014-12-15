@@ -179,11 +179,15 @@ function save_extra_social_links( $user_id )
 
 /* SEARCH */
 function my_search_form( $form ) {
-	$form = '<form role="search" method="get" id="searchform" class="searchform form-inline" action="' . home_url( '/' ) . '" >
-	<div><label class="screen-reader-text sr-only" for="s">' . __( 'Search for:' ) . '</label>
-	<input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" />
-	<input class="btn btn-default" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
-	</div>
+	$form = 
+	'<form role="search" method="get" id="searchform" class="searchform form-inline" action="' . home_url( '/' ) . '" >
+		<div class="input-group">
+			<label class="screen-reader-text sr-only" for="s">' . __( 'Search for:' ) . '</label>
+			<input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" />
+			<span class="input-group-btn">
+				<input class="btn btn-default" type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
+			</span>
+		</div>
 	</form>';
 
 	return $form;
