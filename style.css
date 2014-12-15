@@ -1462,13 +1462,11 @@ article .updated,
 }
 
 .widget-area {
-	border-top: 1px solid #ccc;
 	margin-top: 2em;
 }
 
 .widget-title {
 	font-size: 1.2em;
-	font-weight: bold;
 }
 
 .widget-area input,
@@ -1505,14 +1503,44 @@ article a:hover,
 	color: #e74c3c;
 }
 
-.entry-meta {
-	color: #bbb;
-	font-size: 0.85em;
-	margin: 1em 0;
-	text-transform: uppercase;
-}
+.entry-meta,
+.overview-intro {
+	color: #999;
+} 
 
 .entry-content .more-link {
 	display: block;
 	margin: 1em 0;
 }
+
+.overview-title,
+.entry-title,
+.widget-title  { 
+	font-weight: bold; 
+}
+
+h1.overview-title { font-size: 3em; margin-top: 1em; }
+p.overview-intro { font-size: 1.5em; margin-bottom: 0 }
+h2.entry-title { font-size: 2.4em; }
+
+.entry-meta {
+	font-size: 0.85em;
+	margin: 1em 0;
+	text-transform: uppercase;
+}
+
+.blog article {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 3em;
+	padding-top: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
