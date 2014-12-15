@@ -1449,7 +1449,12 @@ div.wpcf7-validation-errors {
 /******************************/
 /************ BLOG ************/
 /******************************/
-/* Sidebar */
+article .updated,
+.entry-content .more-link span,
+.entry-footer { 
+	display: none; 
+}
+
 .col-md-4 {
 	padding-bottom: 3em;
 	padding-top: 1em;
@@ -1468,34 +1473,46 @@ div.wpcf7-validation-errors {
 
 .widget-area input,
 .comments-area input,
-.comments-area textarea {
+.comments-area textarea,
+.entry-content .more-link .btn {
 	border-radius: 0px;
 }
 
 .widget-area .btn,
-.comments-area .btn {
+.comments-area .btn,
+.entry-content .more-link .btn {
 	background-color: #ff483a;
 	border-color: #ff483a;
 	color: #fff;
 }
 
 .widget-area .btn:hover,
-.comments-area .btn:hover {
+.comments-area .btn:hover,
+.entry-content .more-link .btn:hover {
 	background-color: #ff584b;
 	border-color: #ff584b;
 }
 
-/* #ff483a #ff584b */
+article a,
+.post-navigation a,
+.widget-area a {
+	color: #333;
+}
 
-/* Overview */
-/* Single post */
+article a:hover,
+.post-navigation a:hover,
+.widget-area a:hover {
+	color: #e74c3c;
+}
 
+.entry-meta {
+	color: #bbb;
+	font-size: 0.85em;
+	margin: 1em 0;
+	text-transform: uppercase;
+}
 
-
-
-
-
-
-
-
-
+.entry-content .more-link {
+	display: block;
+	margin: 1em 0;
+}

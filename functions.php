@@ -194,3 +194,9 @@ function my_search_form( $form ) {
 }
 
 add_filter( 'get_search_form', 'my_search_form' );
+
+/* READ MORE LINK */
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+function modify_read_more_link() {
+	return '<span class="more-link"><a class="btn btn-default" href="' . get_permalink() . '">Lees verder</a></span>';
+}
