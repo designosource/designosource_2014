@@ -18,7 +18,7 @@ function designosource_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'designosource' ); ?></h1>
+		<h3 class="screen-reader-text"><?php _e( 'Posts navigation', 'designosource' ); ?></h3>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
@@ -49,11 +49,11 @@ function designosource_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'designosource' ); ?></h1>
+		<h3 class="screen-reader-text"><?php _e( 'Post navigation', 'designosource' ); ?></h3>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'designosource' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'designosource' ) );
+				previous_post_link( '<div class="nav-previous"><span class="meta-nav-title">vorige post</span>%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'designosource' ) );
+				next_post_link(     '<div class="nav-next"><span class="meta-nav-title">volgende post</span>%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'designosource' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
