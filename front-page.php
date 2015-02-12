@@ -18,9 +18,9 @@ get_header(); ?>
 			<div class="section navsection" id="intro">
 				<div class="video-wrapper">
 					<video autoplay>
-						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.mp4" type="video/mp4">
-						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.webm" type="video/webm">
-						<source src="http://designosource.be/2014/designosource/wp-content/themes/designosource_2014/assets/team_movie.ogv" type="video/ogg">
+						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.mp4" type="video/mp4">
+						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.webm" type="video/webm">
+						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.ogv" type="video/ogg">
 					</video>
 				</div>
 				
