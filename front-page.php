@@ -217,7 +217,6 @@ get_header(); ?>
 
 						<div id="sponsors">
 							<h3>Sponsors</h3>
-							<a href="http://www.eigen-domein.com/">Eigen-domein.com</a>
 							<a href="http://www.thomasmore.be/">Thomasmore.be</a>
 							<a href="https://www.facebook.com/DiederikCrapsPhotography">Diederik Craps</a>
 						</div>
