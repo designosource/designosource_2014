@@ -1470,6 +1470,7 @@ article .updated,
 	font-size: 1.2em;
 }
 
+.search .btn,
 .widget-area input,
 .comments-area input,
 .comments-area textarea,
@@ -1477,6 +1478,7 @@ article .updated,
 	border-radius: 0px;
 }
 
+.search .btn,
 .widget-area .btn,
 .comments-area .btn,
 .entry-content .more-link .btn {
@@ -1485,6 +1487,7 @@ article .updated,
 	color: #fff;
 }
 
+.search .btn:hover,
 .widget-area .btn:hover,
 .comments-area .btn:hover,
 .entry-content .more-link .btn:hover {

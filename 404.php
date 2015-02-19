@@ -20,15 +20,15 @@ get_header(); ?>
 						</header><!-- .page-header -->
 
 						<div class="page-content">
-							<p><?php _e( 'De pagina kan niet gevonden worden. Probeer een zoekterm in het zoekveld hieronder.', 'designosource' ); ?></p>
-
-							<?php get_search_form(); ?>
-
+							<p><?php _e( 'De pagina kan niet gevonden worden. <a href="http://www.designosource.be">Keer terug naar de homepagina</a> of gebruik het zoekvak in het bovenste gedeelte van de pagina om de informatie die u zoekt te vinden.', 'designosource' ); ?></p>
 						</div><!-- .page-content -->
 					</section><!-- .error-404 -->
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
+		</div>
+		<div class="col-md-4">
+			<?php get_sidebar(); ?>
 		</div>
 
 	</div>
