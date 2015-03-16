@@ -787,8 +787,7 @@ ul#menu-primary-menu li a
 	width:auto;
 }
 
-#contact .container #fContact #adress,
-#contact .container #fContact #sponsors
+#contact .container #fContact #adress
 {
 	float: left;
 	width: 47.5%;
@@ -797,14 +796,18 @@ ul#menu-primary-menu li a
 
 #contact .container #fContact #sponsors
 {
-	margin-right:0%;
-	text-align: right;
+	float: left;
+	display: block;
+	width: 100%;
 }
 
-#contact .container #fContact #sponsors
-{
-	margin-right:0%;
-	text-align: right;
+#contact a.logo-tm {
+	background-image: url('http://static.thomasmore.be/huisstijl/images/TM_logo_oranje_web.jpg');
+	background-repeat: no-repeat;
+	background-size: 150px;
+	height: 80px;
+	text-indent: 9999px;
+	width: 150px;
 }
 
 #contact .container #eContact
@@ -1252,7 +1255,8 @@ div.wpcf7-validation-errors {
 	}
 	
 	#contact .container #fContact #adress,
-	#contact .container #fContact #sponsors
+	#contact .container #fContact #sponsors,
+	#contact .container #fContact #proj
 	{
 		float: none;
 		width: 100%;
@@ -1589,4 +1593,20 @@ article p {
 .entry-content img {
 	width: 100%;
 	height: auto;
+}
+
+
+/* FOOTER PROJECT BY */
+#proj {
+	display: block;
+	float: right;
+	width: 50%;
+}
+
+.img-responsive-tm {
+	display: inline-block;
+	height: auto;
+	max-width: 180px;
+	margin-top: 1em;
+	width: 100%;
 }

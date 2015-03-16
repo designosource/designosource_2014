@@ -33,6 +33,7 @@ get_header(); ?>
 				<div class="container">
 					<h2><?php the_field('title_about'); ?></h2>
 					<p><?php the_field('text_about'); ?></p>
+					<img class="img-responsive-tm" src="http://static.thomasmore.be/huisstijl/images/TM_logo_zw_web.jpg" alt="Thomas More">
 				</div>
 			</div>
 
@@ -214,10 +215,13 @@ get_header(); ?>
 							<p>België</p>
 							<p>Tel. +32 15 36 92 20</p>
 						</div>
-
+						<div id="proj">
+							<h3>Een project van</h3>
+							<img class="img-responsive-tm" src="http://static.thomasmore.be/huisstijl/images/TM_logo_oranje_web.jpg" alt="Thomas More">
+							<a href="http://www.thomasmore.be">www.thomasmore.be</a>
+						</div>
 						<div id="sponsors">
 							<h3>Sponsors</h3>
-							<a href="http://www.thomasmore.be/">Thomasmore.be</a>
 							<a href="https://www.facebook.com/DiederikCrapsPhotography">Diederik Craps</a>
 						</div>
 					</div>
