@@ -16,6 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="section navsection" id="intro">
+				<img src="/wp-content/themes/designosource/assets/thomasmore.png" alt="Thomas More">
 				<div class="video-wrapper">
 					<video autoplay>
 						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.mp4" type="video/mp4">
@@ -33,7 +34,7 @@ get_header(); ?>
 				<div class="container">
 					<h2><?php the_field('title_about'); ?></h2>
 					<p><?php the_field('text_about'); ?></p>
-					<img class="img-responsive-tm" src="http://static.thomasmore.be/huisstijl/images/TM_logo_zw_web.jpg" alt="Thomas More">
+					<img class="img-responsive-tm" src="http://static.thomasmore.be/huisstijl/images/TM_logo_wit_web.jpg" alt="Thomas More">
 				</div>
 			</div>
 
@@ -217,7 +218,7 @@ get_header(); ?>
 						</div>
 						<div id="proj">
 							<h3>Een project van</h3>
-							<img class="img-responsive-tm" src="http://static.thomasmore.be/huisstijl/images/TM_logo_oranje_web.jpg" alt="Thomas More">
+							<img class="img-responsive-tm" src="/wp-content/themes/designosource/assets/thomasmore_oranje.png" alt="Thomas More">
 							<a href="http://www.thomasmore.be">www.thomasmore.be</a>
 						</div>
 						<div id="sponsors">

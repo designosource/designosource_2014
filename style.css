@@ -134,6 +134,17 @@ ul#menu-primary-menu li a
 
 
 /*INTRO PAGE*/
+#intro img {
+	top: 5%;
+	display: none;
+	height: auto;
+	max-width: 100px;
+	position: absolute;
+	right: 2%;
+	width: 100%;
+	z-index: 1;
+}
+
 #main #intro
 {
 	position: relative;
@@ -896,6 +907,7 @@ div.wpcf7-validation-errors {
 }
 
 @media all and (min-width: 640px) {
+
 	/*NAVIGATION*/
 	ul#menu-primary-menu li
 	{
@@ -979,6 +991,10 @@ div.wpcf7-validation-errors {
 
 /*MEDIAQUERIES TABLET*/
 @media all and (min-width: 768px) {
+	#intro img {
+		display: block;
+	}
+
 	#page #content {
 		margin-top: 60px;
 	}
