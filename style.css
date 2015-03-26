@@ -135,12 +135,15 @@ ul#menu-primary-menu li a
 
 /*INTRO PAGE*/
 #intro img {
-	top: 5%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.25);
 	display: none;
 	height: auto;
 	max-width: 100px;
+	padding: 10px;
 	position: absolute;
 	right: 2%;
+	top: 5%;
 	width: 100%;
 	z-index: 1;
 }

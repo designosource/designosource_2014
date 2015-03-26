@@ -16,7 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="section navsection" id="intro">
-				<img src="/wp-content/themes/designosource/assets/thomasmore.png" alt="Thomas More">
+				<img src="http://localhost/designosource/wp-content/themes/designosource/assets/thomasmore.png" alt="Thomas More">
 				<div class="video-wrapper">
 					<video autoplay>
 						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.mp4" type="video/mp4">
