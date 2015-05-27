@@ -1,3 +1,5 @@
+var c = false;
+
 /* CLOSE MOBILE MENU */
 $(document).ready(function () {
   $(".navbar-nav li a").click(function(event) {
@@ -27,20 +29,46 @@ $('a[href*=#]:not([href=#])').click(function () {
 
 /* SET AVTIVE MENU ITEM */
 $(window).scroll(function(){
-    var windscroll = $(window).scrollTop(); 
-    
+    var windscroll = $(window).scrollTop()
+
+    var a = $(window).scrollTop() + $(window).height();
+    var b = $('#statistics').position().top + $('#statistics').height();
+
     $('#main .navsection').each(function(i) {
         if ($(this).position().top <= windscroll) {
             $('.nav li.active').removeClass('active');
             $('.nav li').eq(i).addClass('active');
         }
     });
-    
+
+    /* STATISTICS */
+    if (a > b && c == false) {
+
+      c = true;
+      var stats = $('#statistics h3');
+
+      $.each(stats, function(index, value) {
+        var timer = setInterval(counter, 100);
+        var total = $(value).text();
+        var i = 0;
+
+        $(value).text(0);
+
+        function counter() {
+          i++;
+          $(value).text(i);
+          if ($(value).text() == total) {
+            clearInterval(timer);
+          }
+        }
+      });
+    }
+
 	return false;
 });
 
 $("#processSteps a").on("click", function(e)
-{	
+{
 	if(!$(this).hasClass("active"))
 	{
 		$("#processSteps a").removeClass("active");
@@ -55,8 +83,8 @@ $("#processSteps a").on("click", function(e)
 function replaceText(id)
 {
 	$("#process .container p:not(#"+id+")").css({"position":"relative"});
-	
-	$.when($("#process .container p:not(#"+id+")").animate({"margin-left":"-10%", "opacity":"0"})).then(function () 
+
+	$.when($("#process .container p:not(#"+id+")").animate({"margin-left":"-10%", "opacity":"0"})).then(function ()
 	{
 	 	$(this).css({"display": "none"});
 		$("#process .container p:not(#"+id+")").css({"margin-left":"10%"});
@@ -70,7 +98,7 @@ $("ul#teamList > :first-child").addClass("active");
 $("#teamMembers ul > :first-child a").addClass("active");
 
 $("#teamMembers ul li a").on("click", function(e)
-{	
+{
 	if(!$(this).hasClass("active"))
 	{
 		$("#teamMembers a").removeClass("active");
@@ -83,39 +111,39 @@ $("#teamMembers ul li a").on("click", function(e)
 });
 
 function replaceProfile(id)
-{			
-	$.when($("#team .container .individualMember:not(#"+id+") .memberImage").animate({"margin-left":"-5%", "opacity":"0"})).then(function () 
-	{			 	
+{
+	$.when($("#team .container .individualMember:not(#"+id+") .memberImage").animate({"margin-left":"-5%", "opacity":"0"})).then(function ()
+	{
 	 	$(this).css({"display": "none"});
-		
-		
+
+
 		$("#team .container .individualMember:not(#"+id+") .memberImage").css({"margin-left":"-5%"});
-		
+
 		$("#team .container .individualMember#"+id +" .memberImage").css({"display": "block"});
 
 		$("#team .container #"+id +" .memberImage").animate({"opacity":"1","margin-left":"0%"});
-		
+
 	});
 
 	$("#team .container .individualMember:not(#"+id+") .memberProfile").css({"position": "absolute", "left": "35"});
-	$.when($("#team .container .individualMember:not(#"+id+") .memberProfile").animate({"margin-left":"10%", "opacity":"0"})).then(function () 
+	$.when($("#team .container .individualMember:not(#"+id+") .memberProfile").animate({"margin-left":"10%", "opacity":"0"})).then(function ()
 	{
 	 	$(this).css({"display": "none"});
-		
+
 		$("#team .container .individualMember:not(#"+id+") .memberProfile").css({"margin-left":"10%"});
 
-		
+
 		$("#team .container .individualMember#"+id+" .memberProfile").css({"display": "block"});
-		
+
 		$("#team .container #"+id+" .memberProfile").animate({"opacity":"1","margin-left":"5%"});
-		
+
 	});
 }
 
-function viewport() 
+function viewport()
 {
     var e = window, a = 'inner';
-    if (!('innerWidth' in window )) 
+    if (!('innerWidth' in window ))
     {
         a = 'client';
         e = document.documentElement || document.body;
@@ -152,6 +180,7 @@ $(window).resize(function()
 		$(".individualMember.active .memberImage").css({"margin-left":"0%"});
 		$(".individualMember .memberProfile").css({"position":"absolute"});
 	}
-	
+
 });
+
 
