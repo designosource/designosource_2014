@@ -24,7 +24,7 @@ get_header(); ?>
 						<source src="<?php echo get_template_directory_uri(); ?>/assets/team_movie.ogv" type="video/ogg">
 					</video>
 				</div>
-				
+
 				<div id="intro_header" class="container">
 					<h1><?php the_field('tagline'); ?></h1>
 				</div>
@@ -46,7 +46,7 @@ get_header(); ?>
 					<ul id="socialCon">
 						<li id="twitter">
 							<a target="_blank" href="https://twitter.com/designosource">Twitter</a>
-						</li>	
+						</li>
 
 						<li id="facebook">
 							<a target="_blank" href="https://www.facebook.com/Designosource">Facebook</a>
@@ -54,7 +54,7 @@ get_header(); ?>
 
 						<li id="linkedIn">
 							<a  target="_blank" href="https://www.linkedin.com/company/designosource">LinkedIn</a>
-						</li>	
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -93,12 +93,12 @@ get_header(); ?>
 
 						foreach($projects as $project)
 						{
-							echo '<li><div class="img-overlay"></div>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) . 
+							echo '<li><div class="img-overlay"></div>' . get_the_post_thumbnail( $project->ID, 'thumbnail' ) .
 							'<a target="_blank" class="btn" href="' . get_post_meta($project->ID, '_url', true) . '">Bekijk project</a></li>';
 							/*'<a href="' . $project->guid . '">Bekijk project</a></li>';*/
 						}
 
-						echo 
+						echo
 						'<li id="projectProposal">
 							<div class="projectInfo">
 								<h3>Uw project hierbij?</h3>
@@ -117,7 +117,7 @@ get_header(); ?>
 				<div class="container">
 
 				<?php $users = get_users( array('role' => 'author') ); ?>
-				
+
 					<h2><?php the_field('title_team'); ?></h2>
 
 					<div id="subCon">
@@ -146,9 +146,9 @@ get_header(); ?>
 									<h3>'.get_the_author_meta('first_name', $user->ID).' '.get_the_author_meta('last_name', $user->ID).'</h3>
 									<p>'.get_the_author_meta('description', $user->ID).'</p>
 									<ul id="socialCon">
-										<li id="twitter"><a target="_blank" href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>	
+										<li id="twitter"><a target="_blank" href="'.get_the_author_meta('twitter_profile', $user->ID).'">Twitter</a></li>
 										<li id="linkedIn"><a target="_blank" href="'.get_the_author_meta('linkedin_profile', $user->ID).'">LinkedIn</a></li>';
-                                        
+
                                         if(get_the_author_meta('user_url', $user->ID) != null)
                                         {
                                             echo '<li id="portfolio"><a target="_blank" href="'.get_the_author_meta('user_url', $user->ID).'">Website</a></li>';
@@ -157,12 +157,12 @@ get_header(); ?>
                                         {
                                             //niets tonen
                                         }
-                                        
+
 									echo '</ul>
 								</div>
 							</li>
 							';
-							
+
 							//echo get_the_author_meta('user_url', $user->ID);
 						}
 					?>
@@ -177,28 +177,28 @@ get_header(); ?>
 
 					<ul>
 						<li>
-							<p>Thee</p>
-							<h3>-</h3>
+							<p><?php the_field('stat-col1-title'); ?></p>
+							<h3><?php the_field('stat-col1-value'); ?></h3>
 						</li>
 
 						<li class="even">
-							<p>Koffiekoeken</p>
-							<h3>20</h3>
+							<p><?php the_field('stat-col2-title'); ?></p>
+							<h3><?php the_field('stat-col2-value'); ?></h3>
 						</li>
 
 						<li>
-							<p>Koffie</p>
-							<h3>2</h3>
+							<p><?php the_field('stat-col3-title'); ?></p>
+							<h3><?php the_field('stat-col3-value'); ?></h3>
 						</li>
 
 						<li class="even">
-							<p>Frituur</p>
-							<h3>1</h3>
+							<p><?php the_field('stat-col4-title'); ?></p>
+							<h3><?php the_field('stat-col4-value'); ?></h3>
 						</li>
 
 						<li class="last">
-							<p>Energy drank</p>
-							<h3>1</h3>
+							<p><?php the_field('stat-col5-title'); ?></p>
+							<h3><?php the_field('stat-col5-value'); ?></h3>
 						</li>
 					</ul>
 				</div>
